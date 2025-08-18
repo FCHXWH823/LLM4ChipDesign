@@ -7,3 +7,6 @@
 [submodule "Masala-CHAI"]
 	path = Masala-CHAI
 	url = https://github.com/jitendra-bhandari/Masala-CHAI
+[submodule "VeriThoughts"]
+	path = VeriThoughts
+	url = https://github.com/wilyub/VeriThoughts
