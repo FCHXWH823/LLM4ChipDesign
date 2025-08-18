@@ -13,3 +13,6 @@
 [submodule "Hybrid-NL2SVA"]
 	path = Hybrid-NL2SVA
 	url = https://github.com/FCHXWH823/RAG-aided-Assertion-Generation
+[submodule "PrefixLLM"]
+	path = PrefixLLM
+	url = https://github.com/FCHXWH823/PrefixGPT
