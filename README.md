@@ -1,4 +1,4 @@
-# LLM-Aided Hardware Design & Verification
+# Generative AI for Chip Design (Design, Verification, Validation, Testbench Generation, Security assessment)
 
 ## AutoChip
 **Introduction:**  
