@@ -1,4 +1,4 @@
-# Generative AI for Chip Design (Design, Verification, Validation, Testbench Generation, Security assessment)
+# Generative AI for Chip Design 
 
 ## AutoChip to Generate Functional Verilog 
 **Motivation:**  
@@ -55,7 +55,7 @@ To enhance LLM performance in NL2SVA, we propose a customized retrieval-augmente
 ---
 
 ## PrefixLLM: LLM-aided Prefix Circuit Design
-**Introduction:**  
+**Motivation:**  
 Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. Recently, large language models (LLMs) have demonstrated a surprising ability to perform text generation tasks. We propose PrefixLLM, which leverages LLMs for prefix circuit synthesis. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. We further present a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
 
 - 📄 **Paper:** https://arxiv.org/abs/2412.02594  
