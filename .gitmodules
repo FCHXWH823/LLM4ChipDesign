@@ -10,3 +10,6 @@
 [submodule "VeriThoughts"]
 	path = VeriThoughts
 	url = https://github.com/wilyub/VeriThoughts
+[submodule "Hybrid-NL2SVA"]
+	path = Hybrid-NL2SVA
+	url = https://github.com/FCHXWH823/RAG-aided-Assertion-Generation
