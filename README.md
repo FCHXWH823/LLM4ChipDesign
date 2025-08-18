@@ -1,6 +1,6 @@
 # Generative AI for Chip Design (Design, Verification, Validation, Testbench Generation, Security assessment)
 
-## AutoChip
+## AutoChip to Generate Functional Verilog 
 **Introduction:**  
 AutoChip is designed to generate functional Verilog modules from an initial design prompt and testbench using a selected large language model. Errors from compilation and simulation are fed back into the LLM for repair.
 
@@ -9,7 +9,7 @@ AutoChip is designed to generate functional Verilog modules from an initial desi
 
 ---
 
-## C2HLSC: Leveraging Large Language Models to Bridge the Software-to-Hardware Design Gap
+## C2HLSC: Use LLM to Bridge the Software-to-Hardware Design Gap
 **Introduction:**  
 We present a case study using an LLM to rewrite C code for NIST 800-22 randomness tests, a QuickSort algorithm, and AES-128 into HLS-synthesizable C. The LLM iteratively transforms the C code guided by the system prompt and tool's feedback, implementing functions like streaming data and hardware-specific signals. With the hindsight obtained from the case study, we implement a fully automated framework to refactor C code into HLS-compatible formats using LLMs. To tackle complex designs, we implement a preprocessing step that breaks down the hierarchy in order to approach the problem in a divide-and-conquer bottom-up way.
 
