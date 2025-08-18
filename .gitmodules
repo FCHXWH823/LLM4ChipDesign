@@ -1,0 +1,3 @@
+[submodule "AutoChip"]
+	path = AutoChip
+	url = https://github.com/shailja-thakur/AutoChip.git
