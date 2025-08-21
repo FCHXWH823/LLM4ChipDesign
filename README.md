@@ -32,7 +32,7 @@ Prefix circuits are fundamental components in digital adders, widely used in dig
 A key aspect of chip design is functional testing, which relies on testbenches to evaluate the functionality and coverage of Register-Transfer Level (RTL) designs. We aim to enhance testbench generation by incorporating feedback from commercial-grade Electronic Design Automation (EDA) tools into LLMs. Through iterative feedback from these tools, we refine the testbenches to achieve improved test coverage.
 
 - 📄 **Paper:** https://arxiv.org/html/2406.17132v1  
-- 🔗 **Link:** (to be added)
+- 🔗 **Link:** https://github.com/jitendra-bhandari/LLM-Aided-Testbench-Generation-for-FSM/tree/main
 
 ---
 
