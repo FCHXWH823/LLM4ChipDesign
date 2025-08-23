@@ -45,6 +45,18 @@ To enhance LLM performance in NL2SVA, we propose a customized retrieval-augmente
 
 ---
 
+## (Security) Assertions by Large Language Models
+Assertion-based verification is a popular verification technique that involves capturing design intent in a set of assertions that can be used in formal verification or testing-based checking. However, writing security-centric assertions is a challenging task. In this work, we investigate the use of emerging large language models (LLMs) for code generation in hardware assertion generation for security, where primarily natural language prompts, such as those one would see as code comments in assertion files, are used to produce SystemVerilog assertions.
+- 📄 **Paper:** https://arxiv.org/abs/2306.14027
+
+---
+
+## LLMPirate: LLMs for Black-box Hardware IP Piracy
+Large language models (LLMs) are increasingly adopted in hardware design and verification, but their powerful generative capabilities also create new security risks. One unexplored threat vector is intellectual property (IP) piracy: rewriting hardware designs to evade piracy detection tools. LLMPirate is the first LLM-based framework that generates pirated circuit design variations capable of consistently bypassing state-of-the-art detection methods. LLMPirate addresses challenges in integrating LLMs with hardware circuit descriptions, scaling to large designs, and ensuring practical efficiency, resulting in an end-to-end automated pipeline.
+- 📄 **Paper:** https://arxiv.org/abs/2411.16111
+
+---
+
 ## C2HLSC: Use LLM to Bridge the Software-to-Hardware Design Gap
 **Motivation:**  
 We present a case study using an LLM to rewrite C code for NIST 800-22 randomness tests, a QuickSort algorithm, and AES-128 into HLS-synthesizable C. The LLM iteratively transforms the C code guided by the system prompt and tool's feedback, implementing functions like streaming data and hardware-specific signals. With the hindsight obtained from the case study, we implement a fully automated framework to refactor C code into HLS-compatible formats using LLMs. To tackle complex designs, we implement a preprocessing step that breaks down the hierarchy in order to approach the problem in a divide-and-conquer bottom-up way.
@@ -60,18 +72,6 @@ Masala-CHAI is a fully automated framework leveraging large language models (LLM
 
 - 📄 **Paper:** https://arxiv.org/abs/2411.14299  
 - 💻 **Code:** https://github.com/jitendra-bhandari/Masala-CHAI
-
----
-
-## LLMPirate: LLMs for Black-box Hardware IP Piracy
-Large language models (LLMs) are increasingly adopted in hardware design and verification, but their powerful generative capabilities also create new security risks. One unexplored threat vector is intellectual property (IP) piracy: rewriting hardware designs to evade piracy detection tools. LLMPirate is the first LLM-based framework that generates pirated circuit design variations capable of consistently bypassing state-of-the-art detection methods. LLMPirate addresses challenges in integrating LLMs with hardware circuit descriptions, scaling to large designs, and ensuring practical efficiency, resulting in an end-to-end automated pipeline.
-- 📄 **Paper:** https://arxiv.org/abs/2411.16111
-
----
-
-## (Security) Assertions by Large Language Models
-Assertion-based verification is a popular verification technique that involves capturing design intent in a set of assertions that can be used in formal verification or testing-based checking. However, writing security-centric assertions is a challenging task. In this work, we investigate the use of emerging large language models (LLMs) for code generation in hardware assertion generation for security, where primarily natural language prompts, such as those one would see as code comments in assertion files, are used to produce SystemVerilog assertions.
-- 📄 **Paper:** https://arxiv.org/abs/2306.14027
 
 ---
 
