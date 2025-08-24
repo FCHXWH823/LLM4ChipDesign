@@ -103,6 +103,16 @@ git commit -m "add <your/module/name>"
 git push origin main
 ```
 
+#### 📌 After adding a new submodule  
+
+Please **also update this README** by adding a new section for the submodule with:  
+
+- **Title** (project name)  
+- **Motivation** (short description of its purpose)  
+- **Original GitHub repo** (link to the repo)  
+
+This keeps the documentation consistent for future contributors.  
+
 ### Update a submodule
 ```bash
 cd <your/module/path>
