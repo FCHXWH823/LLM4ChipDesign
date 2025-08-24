@@ -16,3 +16,7 @@
 [submodule "LLM-Aided-Testbench-Generation-for-FSM"]
 	path = LLM-Aided-Testbench-Generation-for-FSM
 	url = https://github.com/jitendra-bhandari/LLM-Aided-Testbench-Generation-for-FSM.git
+[submodule "c2hls"]
+	path = c2hls
+	url = https://github.com/Lucaz97/c2hlsc.git
+	branch = main
