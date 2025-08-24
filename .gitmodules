@@ -1,9 +1,6 @@
 [submodule "AutoChip"]
 	path = AutoChip
 	url = https://github.com/shailja-thakur/AutoChip.git
-[submodule "c2hlsc"]
-	path = c2hlsc
-	url = https://github.com/Lucaz97/c2hlsc
 [submodule "Masala-CHAI"]
 	path = Masala-CHAI
 	url = https://github.com/jitendra-bhandari/Masala-CHAI
