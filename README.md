@@ -1,5 +1,19 @@
 # Generative AI for Chip Design 
 
+## Table of Contents
+- [AutoChip to Generate Functional Verilog](#autochip-to-generate-functional-verilog)
+- [VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification](#verithoughts-enabling-automated-verilog-code-generation-using-reasoning-and-formal-verification)
+- [PrefixLLM: LLM-aided Prefix Circuit Design](#prefixllm-llm-aided-prefix-circuit-design)
+- [LLM-aided Testbench Generation and Bug Detection for Finite-State Machines](#llm-aided-testbench-generation-and-bug-detection-for-finite-state-machines)
+- [Hybrid-NL2SVA: LLM-based Natural Language to SystemVerilog Assertion](#hybrid-nl2sva-llm-based-natural-language-to-systemverilog-assertion)
+- [Security Assertions by Large Language Models](#security-assertions-by-large-language-models)
+- [LLMPirate: LLMs for Black-box Hardware IP Piracy](#llmpirate-llms-for-black-box-hardware-ip-piracy)
+- [C2HLSC: Use LLM to Bridge the Software-to-Hardware Design Gap](#c2hlsc-use-llm-to-bridge-the-software-to-hardware-design-gap)
+- [Masala-CHAI: A Large-Scale SPICE Netlist Dataset for Analog Circuits by Harnessing AI](#masala-chai-a-large-scale-spice-netlist-dataset-for-analog-circuits-by-harnessing-ai)
+- [Git Submodules (Add / Update / Delete)](#git-submodules-add--update--delete)
+
+---
+
 ## AutoChip to Generate Functional Verilog 
 **Motivation:**  
 AutoChip is designed to generate functional Verilog modules from an initial design prompt and testbench using a selected large language model. Errors from compilation and simulation are fed back into the LLM for repair.
@@ -74,4 +88,37 @@ Masala-CHAI is a fully automated framework leveraging large language models (LLM
 - 💻 **Code:** https://github.com/jitendra-bhandari/Masala-CHAI
 
 ---
+
+## Git Submodules (Add / Update / Delete)
+
+> This repo uses Git submodules for some components. Use the commands below to add a new submodule, pull updates from its original repo, or remove it.
+
+### Add a submodule
+```bash
+git submodule add -b <branch_name> <repository_url> <path/to/submodule>
+git submodule init
+git submodule update
+git add .
+git commit -m "add <your/module/name>"
+git push origin main
+```
+
+### Update a submodule
+```bash
+cd <your/module/path>
+git fetch
+git checkout main
+git pull origin main
+cd ..
+git add <your/module/path>
+git commit -m "update <your/module/name>"
+git push origin main
+```
+
+### Delete a submodule
+```bash
+git rm <your/module/path>
+git commit -m "delete <your/module/name>"
+```
+
 
