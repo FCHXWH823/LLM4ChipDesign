@@ -20,6 +20,7 @@ AutoChip is designed to generate functional Verilog modules from an initial desi
 
 - 📄 **Paper:** https://arxiv.org/abs/2311.04887  
 - 💻 **Code:** https://github.com/shailja-thakur/AutoChip.git
+- 📑 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/ETS%202025%20Tutorial.pptx
 
 ---
 
@@ -62,12 +63,14 @@ To enhance LLM performance in NL2SVA, we propose a customized retrieval-augmente
 ## (Security) Assertions by Large Language Models
 Assertion-based verification is a popular verification technique that involves capturing design intent in a set of assertions that can be used in formal verification or testing-based checking. However, writing security-centric assertions is a challenging task. In this work, we investigate the use of emerging large language models (LLMs) for code generation in hardware assertion generation for security, where primarily natural language prompts, such as those one would see as code comments in assertion files, are used to produce SystemVerilog assertions.
 - 📄 **Paper:** https://arxiv.org/abs/2306.14027
+- 📄 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/llm_assertion_slides.pptx
 
 ---
 
 ## LLMPirate: LLMs for Black-box Hardware IP Piracy
 Large language models (LLMs) are increasingly adopted in hardware design and verification, but their powerful generative capabilities also create new security risks. One unexplored threat vector is intellectual property (IP) piracy: rewriting hardware designs to evade piracy detection tools. LLMPirate is the first LLM-based framework that generates pirated circuit design variations capable of consistently bypassing state-of-the-art detection methods. LLMPirate addresses challenges in integrating LLMs with hardware circuit descriptions, scaling to large designs, and ensuring practical efficiency, resulting in an end-to-end automated pipeline.
 - 📄 **Paper:** https://arxiv.org/abs/2411.16111
+- 📄 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/LLMPirate_slides.pptx
 
 ---
 
@@ -77,6 +80,7 @@ We present a case study using an LLM to rewrite C code for NIST 800-22 randomnes
 
 - 📄 **Paper:** https://arxiv.org/abs/2412.00214  
 - 💻 **Code:** https://github.com/Lucaz97/c2hlsc
+- 📄 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/C2HLSC%20-%20Neurips%20Tutorial.pptx
 
 ---
 
