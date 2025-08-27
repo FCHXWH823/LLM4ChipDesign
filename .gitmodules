@@ -20,3 +20,7 @@
 	path = c2hls
 	url = https://github.com/Lucaz97/c2hlsc.git
 	branch = main
+[submodule "ROME"]
+	path = ROME
+	url = https://github.com/ajn313/ROME-LLM
+	branch = main
