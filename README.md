@@ -34,6 +34,15 @@ VeriThoughts is a novel dataset designed for reasoning-based Verilog code genera
 
 ---
 
+## Rome was Not Built in a Single Step: Hierarchical Prompting for LLM-based Chip Design
+**Motivation:**  
+The ROME tool is an LLM-based hierarchical Verilog generation mechanism which automatically produces designs for complex hardware modules that standard flat prompting methods cannot achieve, allowing smaller open-source LLMs to compete with large proprietary models. Hierarchical prompting reduces HDL generation time and yields savings on compute costs. Our experiments detail which LLMs are capable of which applications, and how to apply hierarchical methods in various modes. We explore case studies of generating complex cores using automatic scripted hierarchical prompts, including the first-ever LLM-designed processor with no human feedback.
+
+- 📄 **Paper:** [https://arxiv.org/abs/2407.18276 ](https://arxiv.org/abs/2407.18276) 
+- 💻 **Code:** [https://github.com/ajn313/ROME-LLM/tree/main](https://github.com/ajn313/ROME-LLM/tree/main)
+
+---
+
 ## Veritas: Deterministic Verilog Code Synthesis from LLM-Generated Conjunctive Normal Form
 **Motivation:**  
 Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. Recently, large language models (LLMs) have demonstrated a surprising ability to perform text generation tasks. We propose PrefixLLM, which leverages LLMs for prefix circuit synthesis. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. We further present a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
