@@ -33,6 +33,14 @@ VeriThoughts is a novel dataset designed for reasoning-based Verilog code genera
 
 ---
 
+## Veritas: Deterministic Verilog Code Synthesis from LLM-Generated Conjunctive Normal Form
+**Motivation:**  
+Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. Recently, large language models (LLMs) have demonstrated a surprising ability to perform text generation tasks. We propose PrefixLLM, which leverages LLMs for prefix circuit synthesis. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. We further present a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
+
+- 📄 **Paper:** https://arxiv.org/pdf/2506.00005v1
+
+---
+
 ## PrefixLLM: LLM-aided Prefix Circuit Design
 **Motivation:**  
 Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. Recently, large language models (LLMs) have demonstrated a surprising ability to perform text generation tasks. We propose PrefixLLM, which leverages LLMs for prefix circuit synthesis. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. We further present a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
@@ -47,7 +55,7 @@ Prefix circuits are fundamental components in digital adders, widely used in dig
 A key aspect of chip design is functional testing, which relies on testbenches to evaluate the functionality and coverage of Register-Transfer Level (RTL) designs. We aim to enhance testbench generation by incorporating feedback from commercial-grade Electronic Design Automation (EDA) tools into LLMs. Through iterative feedback from these tools, we refine the testbenches to achieve improved test coverage.
 
 - 📄 **Paper:** https://arxiv.org/html/2406.17132v1  
-- 🔗 **Link:** https://github.com/jitendra-bhandari/LLM-Aided-Testbench-Generation-for-FSM/
+- 🔗 **Code:** https://github.com/jitendra-bhandari/LLM-Aided-Testbench-Generation-for-FSM/
 
 ---
 
