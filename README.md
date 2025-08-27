@@ -3,6 +3,7 @@
 ## Table of Contents
 - [AutoChip to Generate Functional Verilog](#autochip-to-generate-functional-verilog)
 - [VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification](#verithoughts-enabling-automated-verilog-code-generation-using-reasoning-and-formal-verification)
+- [Veritas: Deterministic Verilog Code Synthesis from LLM-Generated Conjunctive Normal Form](#veritas-eterministic-verilog-code-synthesis-from-llm-generated-conjunctive-normalform)
 - [PrefixLLM: LLM-aided Prefix Circuit Design](#prefixllm-llm-aided-prefix-circuit-design)
 - [LLM-aided Testbench Generation and Bug Detection for Finite-State Machines](#llm-aided-testbench-generation-and-bug-detection-for-finite-state-machines)
 - [Hybrid-NL2SVA: LLM-based Natural Language to SystemVerilog Assertion](#hybrid-nl2sva-llm-based-natural-language-to-systemverilog-assertion)
