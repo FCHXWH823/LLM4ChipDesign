@@ -9,6 +9,7 @@
 - [LLM-aided Testbench Generation and Bug Detection for Finite-State Machines](#llm-aided-testbench-generation-and-bug-detection-for-finite-state-machines)
 - [Hybrid-NL2SVA: LLM-based Natural Language to SystemVerilog Assertion](#hybrid-nl2sva-llm-based-natural-language-to-systemverilog-assertion)
 - [Security Assertions by Large Language Models](#security-assertions-by-large-language-models)
+- [OpenTitan RAG SVA Generator](#opentitan-rag-sva-generator)
 - [LLMPirate: LLMs for Black-box Hardware IP Piracy](#llmpirate-llms-for-black-box-hardware-ip-piracy)
 - [C2HLSC: Use LLM to Bridge the Software-to-Hardware Design Gap](#c2hlsc-use-llm-to-bridge-the-software-to-hardware-design-gap)
 - [Masala-CHAI: A Large-Scale SPICE Netlist Dataset for Analog Circuits by Harnessing AI](#masala-chai-a-large-scale-spice-netlist-dataset-for-analog-circuits-by-harnessing-ai)
@@ -41,6 +42,7 @@ The ROME tool is an LLM-based hierarchical Verilog generation mechanism which au
 
 - 📄 **Paper:** [https://arxiv.org/abs/2407.18276 ](https://arxiv.org/abs/2407.18276) 
 - 💻 **Code:** [https://github.com/ajn313/ROME-LLM/tree/main](https://github.com/ajn313/ROME-LLM/tree/main)
+- 📄 **Slides:** [https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/MLCAD%20ROME%20Presentation.pptx](https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/MLCAD%20ROME%20Presentation.pptx)
 
 ---
 
