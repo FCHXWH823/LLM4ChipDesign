@@ -86,6 +86,12 @@ Assertion-based verification is a popular verification technique that involves c
 
 ---
 
+## OpenTitan RAG SVA Generator
+A Retrieval-Augmented Generation (RAG) system for automatically generating SystemVerilog Assertions (SVA) for OpenTitan IP blocks. This system combines web scraping, semantic search, and large language models to generate high-quality SystemVerilog assertions for OpenTitan hardware IP blocks. It downloads documentation from the OpenTitan website, processes it into a searchable knowledge base, and uses AI to generate contextually relevant SVA properties.
+- 💻 **Code:** https://github.com/AnandMenon12/OpenTitan_RAG_SVAGEN
+
+---
+
 ## LLMPirate: LLMs for Black-box Hardware IP Piracy
 Large language models (LLMs) are increasingly adopted in hardware design and verification, but their powerful generative capabilities also create new security risks. One unexplored threat vector is intellectual property (IP) piracy: rewriting hardware designs to evade piracy detection tools. LLMPirate is the first LLM-based framework that generates pirated circuit design variations capable of consistently bypassing state-of-the-art detection methods. LLMPirate addresses challenges in integrating LLMs with hardware circuit descriptions, scaling to large designs, and ensuring practical efficiency, resulting in an end-to-end automated pipeline.
 - 📄 **Paper:** https://arxiv.org/abs/2411.16111
