@@ -24,3 +24,7 @@
 	path = ROME
 	url = https://github.com/ajn313/ROME-LLM
 	branch = main
+[submodule "Veritas"]
+	path = Veritas
+	url = https://github.com/PrithwishBasuRoy/Veritas.git
+	branch = main
