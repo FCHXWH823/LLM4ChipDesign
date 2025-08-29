@@ -225,6 +225,68 @@
             margin: 0 5px;
         }
 
+        /* Workflow diagram styles */
+        .workflow-container {
+            margin: 15px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .workflow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 0.75em;
+        }
+
+        .workflow-step {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            padding: 6px 10px;
+            text-align: center;
+            min-width: 60px;
+            font-weight: bold;
+            color: #333;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .workflow-step:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .workflow-arrow {
+            font-size: 1.2em;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        /* Different colors for different workflows */
+        .autochip .workflow-step {
+            border-color: #4CAF50;
+            color: #2E7D32;
+        }
+
+        .security .workflow-step {
+            border-color: #FF5722;
+            color: #D84315;
+        }
+
+        .c2hlsc .workflow-step {
+            border-color: #2196F3;
+            color: #1565C0;
+        }
+
+        .workflow-step:nth-child(odd):not(.workflow-arrow) {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
         .stats-section {
             background: #263238;
             color: white;
@@ -284,6 +346,22 @@
                 padding: 20px;
                 margin: 10px;
             }
+
+            .workflow {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .workflow-arrow {
+                transform: rotate(90deg);
+                font-size: 1.5em;
+            }
+
+            .workflow-step {
+                min-width: 80px;
+                padding: 8px 12px;
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -307,25 +385,60 @@
         <div class="highlighted-projects">
             <h3>🌟 Featured Submodules</h3>
             <div class="highlight-grid">
-                <div class="highlight-item">
+                <div class="highlight-item autochip">
                     <h4>🔧 AutoChip</h4>
                     <p>Generate functional Verilog modules from design prompts using LLMs with iterative error feedback</p>
+                    <div class="workflow-container">
+                        <div class="workflow">
+                            <div class="workflow-step">Natural Language Prompt</div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">LLM</div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">Verilog Code</div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">Error Feedback</div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">Refined Verilog</div>
+                        </div>
+                    </div>
                     <div class="links">
                         <a href="https://arxiv.org/abs/2311.04887">📄 Paper</a>
                         <a href="https://github.com/shailja-thakur/AutoChip.git">💻 Code</a>
                     </div>
                 </div>
-                <div class="highlight-item">
+                <div class="highlight-item security">
                     <h4>🛡️ Security Assertions</h4>
                     <p>LLM-generated SystemVerilog assertions for hardware security verification</p>
+                    <div class="workflow-container">
+                        <div class="workflow">
+                            <div class="workflow-step">Natural Language Security Specs</div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">LLM</div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">SystemVerilog Assertions</div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">Hardware Verification</div>
+                        </div>
+                    </div>
                     <div class="links">
                         <a href="https://arxiv.org/abs/2306.14027">📄 Paper</a>
                         <a href="#">💻 Code</a>
                     </div>
                 </div>
-                <div class="highlight-item">
+                <div class="highlight-item c2hlsc">
                     <h4>⚡ C2HLSC</h4>
                     <p>Bridge software-to-hardware design gap using LLMs to refactor C code for HLS</p>
+                    <div class="workflow-container">
+                        <div class="workflow">
+                            <div class="workflow-step">C Code</div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">LLM Transformation</div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">HLS-Compatible C</div>
+                            <div class="workflow-arrow">→</div>
+                            <div class="workflow-step">Hardware Synthesis</div>
+                        </div>
+                    </div>
                     <div class="links">
                         <a href="https://arxiv.org/abs/2412.00214">📄 Paper</a>
                         <a href="https://github.com/Lucaz97/c2hlsc">💻 Code</a>
