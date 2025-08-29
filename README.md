@@ -48,9 +48,11 @@ The ROME tool is an LLM-based hierarchical Verilog generation mechanism which au
 
 ## Veritas: Deterministic Verilog Code Synthesis from LLM-Generated Conjunctive Normal Form
 **Motivation:**  
-Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. Recently, large language models (LLMs) have demonstrated a surprising ability to perform text generation tasks. We propose PrefixLLM, which leverages LLMs for prefix circuit synthesis. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. We further present a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
+Automated Verilog code synthesis poses significant challenges and typically demands expert oversight. Traditional high-level synthesis (HLS) methods often fail to scale for real-world designs. While large language models (LLMs) have enhanced scalability, they often introduce syntactical and logical errors requiring extensive post-generation verification. Here, we introduce a novel conjunctive normal form (CNF)-guided synthesis methodology. The idea is to have an LLM generate CNF clauses, a format widely used for formal verification and synthesis validation in hardware design, but here it is used to formally describe the desired circuit functionality. These CNF specifications are then deterministically converted into Verilog, ensuring correctness by construction. Experimental results demonstrate that our approach reliably produces functionally correct Verilog code on the first attempt, compared to other SoTA works such as Verigen (2B parameters) and RTLCoder (4-bit quantized with around 7B parameters). 
 
 - 📄 **Paper:** https://arxiv.org/pdf/2506.00005v1
+- 💻 **Code:** [https://github.com/PrithwishBasuRoy/Veritas.git](https://github.com/PrithwishBasuRoy/Veritas.git)
+- 📄 **Slides:** [https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/Veritas-Presentations.pptx](https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/Veritas-Presentations.pptx)
 
 ---
 
