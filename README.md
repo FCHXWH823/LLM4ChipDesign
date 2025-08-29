@@ -78,6 +78,7 @@ To enhance LLM performance in NL2SVA, we propose a customized retrieval-augmente
 
 - 📄 **Paper:** https://arxiv.org/pdf/2506.21569  
 - 💻 **Code:** https://github.com/FCHXWH823/RAG-aided-Assertion-Generation
+- 📄 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/MLCAD25-Hybrid-NL2SVA.pptx
 
 ---
 
