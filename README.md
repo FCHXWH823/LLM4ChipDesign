@@ -36,7 +36,7 @@ VeriThoughts is a novel dataset designed for reasoning-based Verilog code genera
 
 ---
 
-## Rome was Not Built in a Single Step: Hierarchical Prompting for LLM-based Chip Design
+## Hierarchical Prompting for LLM-based Hierarchical Verilog Generation
 **Motivation:**  
 The ROME tool is an LLM-based hierarchical Verilog generation mechanism which automatically produces designs for complex hardware modules that standard flat prompting methods cannot achieve, allowing smaller open-source LLMs to compete with large proprietary models. Hierarchical prompting reduces HDL generation time and yields savings on compute costs. Our experiments detail which LLMs are capable of which applications, and how to apply hierarchical methods in various modes. We explore case studies of generating complex cores using automatic scripted hierarchical prompts, including the first-ever LLM-designed processor with no human feedback.
 
@@ -46,7 +46,7 @@ The ROME tool is an LLM-based hierarchical Verilog generation mechanism which au
 
 ---
 
-## Veritas: Deterministic Verilog Code Synthesis from LLM-Generated Conjunctive Normal Form
+## Veritas: Deterministic Verilog Code Generation from LLM-Generated Conjunctive Normal Form
 **Motivation:**  
 Automated Verilog code synthesis poses significant challenges and typically demands expert oversight. Traditional high-level synthesis (HLS) methods often fail to scale for real-world designs. While large language models (LLMs) have enhanced scalability, they often introduce syntactical and logical errors requiring extensive post-generation verification. Here, we introduce a novel conjunctive normal form (CNF)-guided synthesis methodology. The idea is to have an LLM generate CNF clauses, a format widely used for formal verification and synthesis validation in hardware design, but here it is used to formally describe the desired circuit functionality. These CNF specifications are then deterministically converted into Verilog, ensuring correctness by construction. Experimental results demonstrate that our approach reliably produces functionally correct Verilog code on the first attempt, compared to other SoTA works such as Verigen (2B parameters) and RTLCoder (4-bit quantized with around 7B parameters). 
 
@@ -56,9 +56,9 @@ Automated Verilog code synthesis poses significant challenges and typically dema
 
 ---
 
-## PrefixLLM: LLM-aided Prefix Circuit Design
+## PrefixLLM: LLM-aided Verilog Generation for Prefix Adder Circuit Design
 **Motivation:**  
-Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. Recently, large language models (LLMs) have demonstrated a surprising ability to perform text generation tasks. We propose PrefixLLM, which leverages LLMs for prefix circuit synthesis. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. We further present a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
+Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. Recently, large language models (LLMs) have demonstrated a surprising ability to perform text generation tasks. PrefixLLM leverages LLMs for prefix circuit synthesis. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. PrefixLLM further presents a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
 
 - 📄 **Paper:** https://arxiv.org/abs/2412.02594  
 - 💻 **Code:** https://github.com/FCHXWH823/PrefixGPT
@@ -67,16 +67,16 @@ Prefix circuits are fundamental components in digital adders, widely used in dig
 
 ## LLM-aided Testbench Generation and Bug Detection for Finite-State Machines
 **Motivation:**  
-A key aspect of chip design is functional testing, which relies on testbenches to evaluate the functionality and coverage of Register-Transfer Level (RTL) designs. We aim to enhance testbench generation by incorporating feedback from commercial-grade Electronic Design Automation (EDA) tools into LLMs. Through iterative feedback from these tools, we refine the testbenches to achieve improved test coverage.
+A key aspect of chip design is functional testing, which relies on testbenches to evaluate the functionality and coverage of Verilog designs. This tool aims to enhance testbench generation by incorporating feedback from commercial-grade Electronic Design Automation (EDA) tools into LLMs. Through iterative feedback from these tools, it refines the testbenches to achieve improved test coverage.
 
 - 📄 **Paper:** https://arxiv.org/html/2406.17132v1  
 - 🔗 **Code:** https://github.com/jitendra-bhandari/LLM-Aided-Testbench-Generation-for-FSM/
 
 ---
 
-## Hybrid-NL2SVA: LLM-based Natural Language to SystemVerilog Assertion
+## LLM-based Natural Language to SystemVerilog Assertion
 **Motivation:**  
-To enhance LLM performance in NL2SVA, we propose a customized retrieval-augmented generation (RAG) framework and a synthetic fine-tuning dataset that together improve LLM’s performance. Our RAG framework (i) constructs a context-preserving database via dynamic splitting technique, (ii) combines global semantic retrieval with keyword-guided retrieval to extract SVA operator-related contexts via HybridRetrieval, and (iii) validates and corrects the use of SVA operators in LLM-generated SVAs via SVA operator-based rechecking. To further improve lightweight models over NL2SVA, our fine-tuning dataset provides prompt-guided explanations that teach LLMs the layer-by-layer construction process of concurrent SVAs, enabling supervised fine-tuning that greatly improves syntax and functionality accuracy.
+This tool helps LLM generate SystemVerilog assertions from natural language input.
 
 - 📄 **Paper:** https://arxiv.org/pdf/2506.21569  
 - 💻 **Code:** https://github.com/FCHXWH823/RAG-aided-Assertion-Generation
