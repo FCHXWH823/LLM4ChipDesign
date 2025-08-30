@@ -18,8 +18,8 @@
 ---
 
 ## AutoChip to Generate Functional Verilog 
-**Motivation:**  
-AutoChip is designed to generate functional Verilog modules from an initial design prompt and testbench using a selected large language model. Errors from compilation and simulation are fed back into the LLM for repair.
+**Key Idea:**  
+AutoChip generates functional Verilog modules from an initial design prompt and testbench using a selected large language model. Errors from compilation and simulation are fed back into the LLM for repair.
 
 - 📄 **Paper:** https://arxiv.org/abs/2311.04887  
 - 💻 **Code:** https://github.com/shailja-thakur/AutoChip.git
@@ -27,18 +27,18 @@ AutoChip is designed to generate functional Verilog modules from an initial desi
 
 ---
 
-## VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification
-**Motivation:**  
-VeriThoughts is a novel dataset designed for reasoning-based Verilog code generation. We establish a new benchmark framework grounded in formal verification methods to evaluate the quality and correctness of generated hardware descriptions. Additionally, we present a suite of specialized small-scale models optimized specifically for Verilog generation. Our work addresses the growing need for automated hardware design tools that can produce verifiably correct implementations from high-level specifications, potentially accelerating the hardware development process while maintaining rigorous correctness guarantees.
+## VeriThoughts: Automated Verilog Code Generation using Reasoning and Formal Verification
+**Key Idea:**  
+VeriThoughts is a novel dataset designed for reasoning-based Verilog code generation. We establish a new benchmark framework grounded in formal verification methods to evaluate the quality and correctness of generated hardware descriptions. Additionally, it presents a suite of specialized small-scale models optimized specifically for Verilog generation. Our work addresses the growing need for automated hardware design tools that can produce verifiably correct implementations from high-level specifications, potentially accelerating the hardware development process while maintaining rigorous correctness guarantees.
 
 - 📄 **Paper:** https://arxiv.org/abs/2505.20302  
 - 💻 **Code:** https://github.com/wilyub/VeriThoughts
 
 ---
 
-## Rome was Not Built in a Single Step: Hierarchical Prompting for LLM-based Chip Design
-**Motivation:**  
-The ROME tool is an LLM-based hierarchical Verilog generation mechanism which automatically produces designs for complex hardware modules that standard flat prompting methods cannot achieve, allowing smaller open-source LLMs to compete with large proprietary models. Hierarchical prompting reduces HDL generation time and yields savings on compute costs. Our experiments detail which LLMs are capable of which applications, and how to apply hierarchical methods in various modes. We explore case studies of generating complex cores using automatic scripted hierarchical prompts, including the first-ever LLM-designed processor with no human feedback.
+## Hierarchical Prompting for LLM-based Hierarchical Verilog Generation
+**Key Idea:**  
+This tool supports hierarchical Verilog generation for complex hardware modules that standard flat prompting methods cannot achieve. This allows smaller open-source LLMs to compete with large proprietary models. Hierarchical prompting reduces verilig generation time and yields savings on compute costs. This module will detail which LLMs are capable of which applications, and how to apply hierarchical methods in various modes. We will explore case studies of generating complex cores using automatic scripted hierarchical prompts.
 
 - 📄 **Paper:** [https://arxiv.org/abs/2407.18276 ](https://arxiv.org/abs/2407.18276) 
 - 💻 **Code:** [https://github.com/ajn313/ROME-LLM/tree/main](https://github.com/ajn313/ROME-LLM/tree/main)
@@ -46,9 +46,9 @@ The ROME tool is an LLM-based hierarchical Verilog generation mechanism which au
 
 ---
 
-## Veritas: Deterministic Verilog Code Synthesis from LLM-Generated Conjunctive Normal Form
-**Motivation:**  
-Automated Verilog code synthesis poses significant challenges and typically demands expert oversight. Traditional high-level synthesis (HLS) methods often fail to scale for real-world designs. While large language models (LLMs) have enhanced scalability, they often introduce syntactical and logical errors requiring extensive post-generation verification. Here, we introduce a novel conjunctive normal form (CNF)-guided synthesis methodology. The idea is to have an LLM generate CNF clauses, a format widely used for formal verification and synthesis validation in hardware design, but here it is used to formally describe the desired circuit functionality. These CNF specifications are then deterministically converted into Verilog, ensuring correctness by construction. Experimental results demonstrate that our approach reliably produces functionally correct Verilog code on the first attempt, compared to other SoTA works such as Verigen (2B parameters) and RTLCoder (4-bit quantized with around 7B parameters). 
+## Veritas: Verilog Code Generation from LLM-Generated Conjunctive Normal Form
+**Key Idea:**  
+Veritas introduces a novel conjunctive normal form (CNF)-guided verilog synthesis methodology. The idea is to have an LLM generate CNF clauses, a format widely used for formal verification and synthesis validation in hardware design. veritas uses it to formally describe the desired circuit functionality. The generated CNF specifications are deterministically converted into Verilog, ensuring correctness by construction.  
 
 - 📄 **Paper:** https://arxiv.org/pdf/2506.00005v1
 - 💻 **Code:** [https://github.com/PrithwishBasuRoy/Veritas.git](https://github.com/PrithwishBasuRoy/Veritas.git)
@@ -56,9 +56,9 @@ Automated Verilog code synthesis poses significant challenges and typically dema
 
 ---
 
-## PrefixLLM: LLM-aided Prefix Circuit Design
-**Motivation:**  
-Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. Recently, large language models (LLMs) have demonstrated a surprising ability to perform text generation tasks. We propose PrefixLLM, which leverages LLMs for prefix circuit synthesis. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. We further present a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
+## PrefixLLM: LLM-aided Verilog Generation for Prefix Adder Circuit Design
+**Key Idea:**  
+Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. PrefixLLM further presents a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
 
 - 📄 **Paper:** https://arxiv.org/abs/2412.02594  
 - 💻 **Code:** https://github.com/FCHXWH823/PrefixGPT
@@ -66,17 +66,17 @@ Prefix circuits are fundamental components in digital adders, widely used in dig
 ---
 
 ## LLM-aided Testbench Generation and Bug Detection for Finite-State Machines
-**Motivation:**  
-A key aspect of chip design is functional testing, which relies on testbenches to evaluate the functionality and coverage of Register-Transfer Level (RTL) designs. We aim to enhance testbench generation by incorporating feedback from commercial-grade Electronic Design Automation (EDA) tools into LLMs. Through iterative feedback from these tools, we refine the testbenches to achieve improved test coverage.
+**Key Idea:**  
+A key aspect of chip design is functional testing, which relies on testbenches to evaluate the functionality and coverage of Verilog designs. This LL-based tool aims to enhance testbench generation by incorporating feedback from commercial-grade Electronic Design Automation tools. Through iterative feedback from these tools, it refines the testbenches to achieve improved test coverage.
 
 - 📄 **Paper:** https://arxiv.org/html/2406.17132v1  
 - 🔗 **Code:** https://github.com/jitendra-bhandari/LLM-Aided-Testbench-Generation-for-FSM/
 
 ---
 
-## Hybrid-NL2SVA: LLM-based Natural Language to SystemVerilog Assertion
-**Motivation:**  
-To enhance LLM performance in NL2SVA, we propose a customized retrieval-augmented generation (RAG) framework and a synthetic fine-tuning dataset that together improve LLM’s performance. Our RAG framework (i) constructs a context-preserving database via dynamic splitting technique, (ii) combines global semantic retrieval with keyword-guided retrieval to extract SVA operator-related contexts via HybridRetrieval, and (iii) validates and corrects the use of SVA operators in LLM-generated SVAs via SVA operator-based rechecking. To further improve lightweight models over NL2SVA, our fine-tuning dataset provides prompt-guided explanations that teach LLMs the layer-by-layer construction process of concurrent SVAs, enabling supervised fine-tuning that greatly improves syntax and functionality accuracy.
+## LLM-based Natural Language to SystemVerilog Assertion
+**Key Idea:**  
+Assertion-based verification is a popular verification technique that involves capturing design intent in a set of assertions that can be used in formal verification or testing-based checking.  However, writing security-centric assertions is a challenging task. This tool helps LLM generate SystemVerilog assertions from natural language input.
 
 - 📄 **Paper:** https://arxiv.org/pdf/2506.21569  
 - 💻 **Code:** https://github.com/FCHXWH823/RAG-aided-Assertion-Generation
@@ -85,28 +85,28 @@ To enhance LLM performance in NL2SVA, we propose a customized retrieval-augmente
 ---
 
 ## (Security) Assertions by Large Language Models
-Assertion-based verification is a popular verification technique that involves capturing design intent in a set of assertions that can be used in formal verification or testing-based checking. However, writing security-centric assertions is a challenging task. In this work, we investigate the use of emerging large language models (LLMs) for code generation in hardware assertion generation for security, where primarily natural language prompts, such as those one would see as code comments in assertion files, are used to produce SystemVerilog assertions.
+**Key Idea:** This tool investigates the use of LLMs for code generation in hardware assertion generation for security, where primarily natural language prompts, such as those one would see as code comments in assertion files, are used to produce SystemVerilog assertions.
 - 📄 **Paper:** https://arxiv.org/abs/2306.14027
 - 📄 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/llm_assertion_slides.pptx
 
 ---
 
-## OpenTitan RAG SVA Generator
-A Retrieval-Augmented Generation (RAG) system for automatically generating SystemVerilog Assertions (SVA) for OpenTitan IP blocks. This system combines web scraping, semantic search, and large language models to generate high-quality SystemVerilog assertions for OpenTitan hardware IP blocks. It downloads documentation from the OpenTitan website, processes it into a searchable knowledge base, and uses AI to generate contextually relevant SVA properties.
+## RAG-based SVA Generator for OpenTitan
+**Key Idea:** This system combines web scraping, semantic search, and LLMs to generate high-quality SystemVerilog assertions for OpenTitan hardware IP blocks. It downloads documentation from the OpenTitan website, processes it into a searchable knowledge base, and uses AI to generate contextually relevant SVA properties.
 - 💻 **Code:** https://github.com/AnandMenon12/OpenTitan_RAG_SVAGEN
 
 ---
 
 ## LLMPirate: LLMs for Black-box Hardware IP Piracy
-Large language models (LLMs) are increasingly adopted in hardware design and verification, but their powerful generative capabilities also create new security risks. One unexplored threat vector is intellectual property (IP) piracy: rewriting hardware designs to evade piracy detection tools. LLMPirate is the first LLM-based framework that generates pirated circuit design variations capable of consistently bypassing state-of-the-art detection methods. LLMPirate addresses challenges in integrating LLMs with hardware circuit descriptions, scaling to large designs, and ensuring practical efficiency, resulting in an end-to-end automated pipeline.
+**Key Idea:** LLMs are increasingly adopted in hardware design and verification, but their powerful generative capabilities also create new security risks. One unexplored threat vector is intellectual property (IP) piracy: rewriting hardware designs to evade piracy detection tools. LLMPirate that generates pirated circuit design variations capable of consistently bypassing state-of-the-art detection methods. LLMPirate addresses challenges in integrating LLMs with hardware circuit descriptions, scaling to large designs, and ensuring practical efficiency, resulting in an end-to-end automated pipeline.
 - 📄 **Paper:** https://arxiv.org/abs/2411.16111
 - 📄 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/LLMPirate_slides.pptx
 
 ---
 
-## C2HLSC: Use LLM to Bridge the Software-to-Hardware Design Gap
-**Motivation:**  
-We present a case study using an LLM to rewrite C code for NIST 800-22 randomness tests, a QuickSort algorithm, and AES-128 into HLS-synthesizable C. The LLM iteratively transforms the C code guided by the system prompt and tool's feedback, implementing functions like streaming data and hardware-specific signals. With the hindsight obtained from the case study, we implement a fully automated framework to refactor C code into HLS-compatible formats using LLMs. To tackle complex designs, we implement a preprocessing step that breaks down the hierarchy in order to approach the problem in a divide-and-conquer bottom-up way.
+## C2HLSC:  LLMs can Bridge the Software-to-Hardware Design Gap
+**Key Idea:**  
+We present a case study using an LLM to rewrite C code for NIST 800-22 randomness tests, a QuickSort algorithm, and AES-128 into HLS-synthesizable C. The LLM iteratively transforms the C code guided by the system prompt and tool's feedback, implementing functions like streaming data and hardware-specific signals. With the hindsight obtained from the case study, we implement a fully automated framework (C2HLSC) to refactor C code into HLS-compatible formats using LLMs. To tackle complex designs, we implement a preprocessing step that breaks down the hierarchy in order to approach the problem in a divide-and-conquer bottom-up way.
 
 - 📄 **Paper:** https://arxiv.org/abs/2412.00214  
 - 💻 **Code:** https://github.com/Lucaz97/c2hlsc
@@ -115,8 +115,8 @@ We present a case study using an LLM to rewrite C code for NIST 800-22 randomnes
 ---
 
 ## Masala-CHAI: A Large-Scale SPICE Netlist Dataset for Analog Circuits by Harnessing AI
-**Motivation:**  
-Masala-CHAI is a fully automated framework leveraging large language models (LLMs) to generate Simulation Programs with Integrated Circuit Emphasis (SPICE) netlists. It addresses a long-standing challenge in circuit design automation: automating netlist generation for analog circuits. Automating this workflow could accelerate the creation of fine-tuned LLMs for analog circuit design and verification. In this work, we identify key challenges in automated netlist generation and evaluate multimodal capabilities of state-of-the-art LLMs, particularly GPT-4, in addressing them. We propose a three-step workflow to overcome existing limitations: labeling analog circuits, prompt tuning, and netlist verification. This approach enables end-to-end SPICE netlist generation from circuit schematic images, tackling the persistent challenge of accurate netlist generation.
+**Key Idea:**  
+Masala-CHAI is a fully automated framework leveraging large language models (LLMs) to generate Simulation Programs with Integrated Circuit Emphasis (SPICE) netlists. It addresses a long-standing challenge in circuit design automation: automating netlist generation for analog circuits. Automating this workflow could accelerate the creation of fine-tuned LLMs for analog circuit design and verification. In this work, we identify key challenges in automated netlist generation and evaluate multimodal capabilities of state-of-the-art LLMs, particularly GPT-4, in addressing them. 
 
 - 📄 **Paper:** https://arxiv.org/abs/2411.14299  
 - 💻 **Code:** https://github.com/jitendra-bhandari/Masala-CHAI
