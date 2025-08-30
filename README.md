@@ -48,7 +48,7 @@ This tool supports hierarchical Verilog generation for complex hardware modules 
 
 ## Veritas: Deterministic Verilog Code Generation from LLM-Generated Conjunctive Normal Form
 **Motivation:**  
-Automated Verilog code synthesis poses significant challenges and typically demands expert oversight. Traditional high-level synthesis (HLS) methods often fail to scale for real-world designs. While large language models (LLMs) have enhanced scalability, they often introduce syntactical and logical errors requiring extensive post-generation verification. Here, we introduce a novel conjunctive normal form (CNF)-guided synthesis methodology. The idea is to have an LLM generate CNF clauses, a format widely used for formal verification and synthesis validation in hardware design, but here it is used to formally describe the desired circuit functionality. These CNF specifications are then deterministically converted into Verilog, ensuring correctness by construction. Experimental results demonstrate that our approach reliably produces functionally correct Verilog code on the first attempt, compared to other SoTA works such as Verigen (2B parameters) and RTLCoder (4-bit quantized with around 7B parameters). 
+Veritas introduces a novel conjunctive normal form (CNF)-guided verilog synthesis methodology. The idea is to have an LLM generate CNF clauses, a format widely used for formal verification and synthesis validation in hardware design. veritas uses it to formally describe the desired circuit functionality. The generated CNF specifications are deterministically converted into Verilog, ensuring correctness by construction.  
 
 - 📄 **Paper:** https://arxiv.org/pdf/2506.00005v1
 - 💻 **Code:** [https://github.com/PrithwishBasuRoy/Veritas.git](https://github.com/PrithwishBasuRoy/Veritas.git)
@@ -58,7 +58,7 @@ Automated Verilog code synthesis poses significant challenges and typically dema
 
 ## PrefixLLM: LLM-aided Verilog Generation for Prefix Adder Circuit Design
 **Motivation:**  
-Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. Recently, large language models (LLMs) have demonstrated a surprising ability to perform text generation tasks. PrefixLLM leverages LLMs for prefix circuit synthesis. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. PrefixLLM further presents a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
+Prefix circuits are fundamental components in digital adders, widely used in digital systems due to their efficiency in calculating carry signals. Synthesizing prefix circuits with minimized area and delay is crucial for enhancing the performance of modern computing systems. PrefixLLM transforms the prefix circuit synthesis task into a structured text generation problem, termed the Structured Prefix Circuit Representation (SPCR), and introduces an iterative framework to automatically and accurately generate valid SPCRs. PrefixLLM further presents a design space exploration (DSE) framework that uses LLMs to iteratively search for area- and delay-optimized prefix circuits.
 
 - 📄 **Paper:** https://arxiv.org/abs/2412.02594  
 - 💻 **Code:** https://github.com/FCHXWH823/PrefixGPT
@@ -67,7 +67,7 @@ Prefix circuits are fundamental components in digital adders, widely used in dig
 
 ## LLM-aided Testbench Generation and Bug Detection for Finite-State Machines
 **Motivation:**  
-A key aspect of chip design is functional testing, which relies on testbenches to evaluate the functionality and coverage of Verilog designs. This tool aims to enhance testbench generation by incorporating feedback from commercial-grade Electronic Design Automation (EDA) tools into LLMs. Through iterative feedback from these tools, it refines the testbenches to achieve improved test coverage.
+A key aspect of chip design is functional testing, which relies on testbenches to evaluate the functionality and coverage of Verilog designs. This LL-based tool aims to enhance testbench generation by incorporating feedback from commercial-grade Electronic Design Automation tools. Through iterative feedback from these tools, it refines the testbenches to achieve improved test coverage.
 
 - 📄 **Paper:** https://arxiv.org/html/2406.17132v1  
 - 🔗 **Code:** https://github.com/jitendra-bhandari/LLM-Aided-Testbench-Generation-for-FSM/
@@ -76,7 +76,7 @@ A key aspect of chip design is functional testing, which relies on testbenches t
 
 ## LLM-based Natural Language to SystemVerilog Assertion
 **Motivation:**  
-This tool helps LLM generate SystemVerilog assertions from natural language input.
+Assertion-based verification is a popular verification technique that involves capturing design intent in a set of assertions that can be used in formal verification or testing-based checking.  However, writing security-centric assertions is a challenging task. This tool helps LLM generate SystemVerilog assertions from natural language input.
 
 - 📄 **Paper:** https://arxiv.org/pdf/2506.21569  
 - 💻 **Code:** https://github.com/FCHXWH823/RAG-aided-Assertion-Generation
@@ -85,7 +85,7 @@ This tool helps LLM generate SystemVerilog assertions from natural language inpu
 ---
 
 ## (Security) Assertions by Large Language Models
-Assertion-based verification is a popular verification technique that involves capturing design intent in a set of assertions that can be used in formal verification or testing-based checking. However, writing security-centric assertions is a challenging task. In this work, we investigate the use of emerging large language models (LLMs) for code generation in hardware assertion generation for security, where primarily natural language prompts, such as those one would see as code comments in assertion files, are used to produce SystemVerilog assertions.
+Assertion-based verification is a popular verification technique that involves capturing design intent in a set of assertions that can be used in formal verification or testing-based checking. In this work, we investigate the use of emerging large language models (LLMs) for code generation in hardware assertion generation for security, where primarily natural language prompts, such as those one would see as code comments in assertion files, are used to produce SystemVerilog assertions.
 - 📄 **Paper:** https://arxiv.org/abs/2306.14027
 - 📄 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/llm_assertion_slides.pptx
 
