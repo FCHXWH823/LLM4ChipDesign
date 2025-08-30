@@ -27,7 +27,7 @@ AutoChip generates functional Verilog modules from an initial design prompt and 
 
 ---
 
-## VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification
+## VeriThoughts: Automated Verilog Code Generation using Reasoning and Formal Verification
 **Motivation:**  
 VeriThoughts is a novel dataset designed for reasoning-based Verilog code generation. We establish a new benchmark framework grounded in formal verification methods to evaluate the quality and correctness of generated hardware descriptions. Additionally, it presents a suite of specialized small-scale models optimized specifically for Verilog generation. Our work addresses the growing need for automated hardware design tools that can produce verifiably correct implementations from high-level specifications, potentially accelerating the hardware development process while maintaining rigorous correctness guarantees.
 
@@ -46,7 +46,7 @@ This tool supports hierarchical Verilog generation for complex hardware modules 
 
 ---
 
-## Veritas: Deterministic Verilog Code Generation from LLM-Generated Conjunctive Normal Form
+## Veritas: Verilog Code Generation from LLM-Generated Conjunctive Normal Form
 **Motivation:**  
 Veritas introduces a novel conjunctive normal form (CNF)-guided verilog synthesis methodology. The idea is to have an LLM generate CNF clauses, a format widely used for formal verification and synthesis validation in hardware design. veritas uses it to formally describe the desired circuit functionality. The generated CNF specifications are deterministically converted into Verilog, ensuring correctness by construction.  
 
@@ -91,22 +91,22 @@ This tool investigates the use of LLMs for code generation in hardware assertion
 
 ---
 
-## OpenTitan RAG SVA Generator
+## RAG-based SVA Generator for OpenTitan
 This system combines web scraping, semantic search, and LLMs to generate high-quality SystemVerilog assertions for OpenTitan hardware IP blocks. It downloads documentation from the OpenTitan website, processes it into a searchable knowledge base, and uses AI to generate contextually relevant SVA properties.
 - 💻 **Code:** https://github.com/AnandMenon12/OpenTitan_RAG_SVAGEN
 
 ---
 
 ## LLMPirate: LLMs for Black-box Hardware IP Piracy
-LLMs are increasingly adopted in hardware design and verification, but their powerful generative capabilities also create new security risks. One unexplored threat vector is intellectual property (IP) piracy: rewriting hardware designs to evade piracy detection tools. LLMPirate is the first LLM-based framework that generates pirated circuit design variations capable of consistently bypassing state-of-the-art detection methods. LLMPirate addresses challenges in integrating LLMs with hardware circuit descriptions, scaling to large designs, and ensuring practical efficiency, resulting in an end-to-end automated pipeline.
+LLMs are increasingly adopted in hardware design and verification, but their powerful generative capabilities also create new security risks. One unexplored threat vector is intellectual property (IP) piracy: rewriting hardware designs to evade piracy detection tools. LLMPirate that generates pirated circuit design variations capable of consistently bypassing state-of-the-art detection methods. LLMPirate addresses challenges in integrating LLMs with hardware circuit descriptions, scaling to large designs, and ensuring practical efficiency, resulting in an end-to-end automated pipeline.
 - 📄 **Paper:** https://arxiv.org/abs/2411.16111
 - 📄 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/LLMPirate_slides.pptx
 
 ---
 
-## C2HLSC: Use LLM to Bridge the Software-to-Hardware Design Gap
+## C2HLSC:  LLMs can Bridge the Software-to-Hardware Design Gap
 **Motivation:**  
-We present a case study using an LLM to rewrite C code for NIST 800-22 randomness tests, a QuickSort algorithm, and AES-128 into HLS-synthesizable C. The LLM iteratively transforms the C code guided by the system prompt and tool's feedback, implementing functions like streaming data and hardware-specific signals. With the hindsight obtained from the case study, we implement a fully automated framework to refactor C code into HLS-compatible formats using LLMs. To tackle complex designs, we implement a preprocessing step that breaks down the hierarchy in order to approach the problem in a divide-and-conquer bottom-up way.
+We present a case study using an LLM to rewrite C code for NIST 800-22 randomness tests, a QuickSort algorithm, and AES-128 into HLS-synthesizable C. The LLM iteratively transforms the C code guided by the system prompt and tool's feedback, implementing functions like streaming data and hardware-specific signals. With the hindsight obtained from the case study, we implement a fully automated framework (C2HLSC) to refactor C code into HLS-compatible formats using LLMs. To tackle complex designs, we implement a preprocessing step that breaks down the hierarchy in order to approach the problem in a divide-and-conquer bottom-up way.
 
 - 📄 **Paper:** https://arxiv.org/abs/2412.00214  
 - 💻 **Code:** https://github.com/Lucaz97/c2hlsc
@@ -116,7 +116,7 @@ We present a case study using an LLM to rewrite C code for NIST 800-22 randomnes
 
 ## Masala-CHAI: A Large-Scale SPICE Netlist Dataset for Analog Circuits by Harnessing AI
 **Motivation:**  
-Masala-CHAI is a fully automated framework leveraging large language models (LLMs) to generate Simulation Programs with Integrated Circuit Emphasis (SPICE) netlists. It addresses a long-standing challenge in circuit design automation: automating netlist generation for analog circuits. Automating this workflow could accelerate the creation of fine-tuned LLMs for analog circuit design and verification. In this work, we identify key challenges in automated netlist generation and evaluate multimodal capabilities of state-of-the-art LLMs, particularly GPT-4, in addressing them. We propose a three-step workflow to overcome existing limitations: labeling analog circuits, prompt tuning, and netlist verification. This approach enables end-to-end SPICE netlist generation from circuit schematic images, tackling the persistent challenge of accurate netlist generation.
+Masala-CHAI is a fully automated framework leveraging large language models (LLMs) to generate Simulation Programs with Integrated Circuit Emphasis (SPICE) netlists. It addresses a long-standing challenge in circuit design automation: automating netlist generation for analog circuits. Automating this workflow could accelerate the creation of fine-tuned LLMs for analog circuit design and verification. In this work, we identify key challenges in automated netlist generation and evaluate multimodal capabilities of state-of-the-art LLMs, particularly GPT-4, in addressing them. 
 
 - 📄 **Paper:** https://arxiv.org/abs/2411.14299  
 - 💻 **Code:** https://github.com/jitendra-bhandari/Masala-CHAI
