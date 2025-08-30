@@ -38,7 +38,7 @@ VeriThoughts is a novel dataset designed for reasoning-based Verilog code genera
 
 ## Hierarchical Prompting for LLM-based Hierarchical Verilog Generation
 **Motivation:**  
-The ROME tool is an LLM-based hierarchical Verilog generation mechanism which automatically produces designs for complex hardware modules that standard flat prompting methods cannot achieve, allowing smaller open-source LLMs to compete with large proprietary models. Hierarchical prompting reduces HDL generation time and yields savings on compute costs. Our experiments detail which LLMs are capable of which applications, and how to apply hierarchical methods in various modes. We explore case studies of generating complex cores using automatic scripted hierarchical prompts, including the first-ever LLM-designed processor with no human feedback.
+This tool supports hierarchical Verilog generation for complex hardware modules that standard flat prompting methods cannot achieve. This allows smaller open-source LLMs to compete with large proprietary models. Hierarchical prompting reduces verilig generation time and yields savings on compute costs. This module will detail which LLMs are capable of which applications, and how to apply hierarchical methods in various modes. We will explore case studies of generating complex cores using automatic scripted hierarchical prompts.
 
 - 📄 **Paper:** [https://arxiv.org/abs/2407.18276 ](https://arxiv.org/abs/2407.18276) 
 - 💻 **Code:** [https://github.com/ajn313/ROME-LLM/tree/main](https://github.com/ajn313/ROME-LLM/tree/main)
