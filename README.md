@@ -19,7 +19,7 @@
 
 ## AutoChip to Generate Functional Verilog 
 **Motivation:**  
-AutoChip is designed to generate functional Verilog modules from an initial design prompt and testbench using a selected large language model. Errors from compilation and simulation are fed back into the LLM for repair.
+AutoChip generates functional Verilog modules from an initial design prompt and testbench using a selected large language model. Errors from compilation and simulation are fed back into the LLM for repair.
 
 - 📄 **Paper:** https://arxiv.org/abs/2311.04887  
 - 💻 **Code:** https://github.com/shailja-thakur/AutoChip.git
@@ -29,7 +29,7 @@ AutoChip is designed to generate functional Verilog modules from an initial desi
 
 ## VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification
 **Motivation:**  
-VeriThoughts is a novel dataset designed for reasoning-based Verilog code generation. We establish a new benchmark framework grounded in formal verification methods to evaluate the quality and correctness of generated hardware descriptions. Additionally, we present a suite of specialized small-scale models optimized specifically for Verilog generation. Our work addresses the growing need for automated hardware design tools that can produce verifiably correct implementations from high-level specifications, potentially accelerating the hardware development process while maintaining rigorous correctness guarantees.
+VeriThoughts is a novel dataset designed for reasoning-based Verilog code generation. We establish a new benchmark framework grounded in formal verification methods to evaluate the quality and correctness of generated hardware descriptions. Additionally, it presents a suite of specialized small-scale models optimized specifically for Verilog generation. Our work addresses the growing need for automated hardware design tools that can produce verifiably correct implementations from high-level specifications, potentially accelerating the hardware development process while maintaining rigorous correctness guarantees.
 
 - 📄 **Paper:** https://arxiv.org/abs/2505.20302  
 - 💻 **Code:** https://github.com/wilyub/VeriThoughts
