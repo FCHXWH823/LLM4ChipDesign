@@ -1,5 +1,7 @@
 # Generative AI for Chip Design 
 
+🎥 **Introduction Video:** [LLM4Hardware_Introduction.mp4](videos/LLM4Hardware_Introduction.mp4) - A comprehensive overview of our research collection
+
 ## Table of Contents
 - [AutoChip to Generate Functional Verilog](#autochip-to-generate-functional-verilog)
 - [VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification](#verithoughts-enabling-automated-verilog-code-generation-using-reasoning-and-formal-verification)
