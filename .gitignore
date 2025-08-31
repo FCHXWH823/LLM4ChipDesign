@@ -1,0 +1,27 @@
+# Temporary files
+*.tmp
+/tmp/
+
+# Video generation temporary files
+temp-audio.m4a
+*.temp
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
