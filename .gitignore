@@ -1,0 +1,15 @@
+# Temporary files
+*.tmp
+*.temp
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# PDF generation script (utility)
+generate_cover_letter.py
+
+# OS files
+.DS_Store
+Thumbs.db
