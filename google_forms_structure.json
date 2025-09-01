@@ -1,0 +1,259 @@
+{
+  "form": {
+    "title": "LLM4ChipDesign Prerequisite Survey",
+    "description": "This survey assesses participants' background knowledge for the LLM4ChipDesign course/workshop. Your responses will help us tailor the content to match the audience's experience level.",
+    "settings": {
+      "collectEmail": true,
+      "limitOneResponsePerPerson": true,
+      "allowResponseEditing": true,
+      "showProgressBar": true,
+      "shuffleQuestions": false
+    },
+    "sections": [
+      {
+        "title": "Personal Information",
+        "questions": [
+          {
+            "id": "name",
+            "text": "Name (Optional)",
+            "type": "SHORT_ANSWER",
+            "required": false
+          },
+          {
+            "id": "email",
+            "text": "Email Address",
+            "type": "SHORT_ANSWER",
+            "required": true
+          },
+          {
+            "id": "institution",
+            "text": "Institution/Organization",
+            "type": "SHORT_ANSWER",
+            "required": true
+          },
+          {
+            "id": "role",
+            "text": "Current Role/Position",
+            "type": "MULTIPLE_CHOICE",
+            "required": true,
+            "options": [
+              "Undergraduate Student",
+              "Graduate Student (Master's)",
+              "Graduate Student (PhD)",
+              "Research Scientist",
+              "Industry Engineer",
+              "Faculty/Professor",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Educational Background",
+        "questions": [
+          {
+            "id": "education_level",
+            "text": "What is your highest level of education?",
+            "type": "MULTIPLE_CHOICE",
+            "required": true,
+            "options": [
+              "High School",
+              "Bachelor's Degree",
+              "Master's Degree",
+              "PhD",
+              "Other"
+            ]
+          },
+          {
+            "id": "field_of_study",
+            "text": "What is your primary field of study/expertise?",
+            "type": "MULTIPLE_CHOICE",
+            "required": true,
+            "options": [
+              "Computer Science",
+              "Electrical Engineering",
+              "Computer Engineering",
+              "Mathematics/Statistics",
+              "Physics",
+              "Other Engineering",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hardware Design Experience",
+        "questions": [
+          {
+            "id": "hdl_experience",
+            "text": "Rate your experience with Hardware Description Languages (HDLs)",
+            "type": "MULTIPLE_CHOICE",
+            "required": true,
+            "options": [
+              "No experience",
+              "Beginner (basic syntax knowledge)",
+              "Intermediate (can write simple modules)",
+              "Advanced (can design complex systems)",
+              "Expert (professional level)"
+            ]
+          },
+          {
+            "id": "hdl_languages",
+            "text": "Which Hardware Description Languages have you used? (Select all that apply)",
+            "type": "CHECKBOX",
+            "required": true,
+            "options": [
+              "Verilog",
+              "SystemVerilog",
+              "VHDL",
+              "Chisel",
+              "SpinalHDL",
+              "None",
+              "Other"
+            ]
+          },
+          {
+            "id": "digital_design_experience",
+            "text": "Rate your experience with digital circuit design",
+            "type": "MULTIPLE_CHOICE",
+            "required": true,
+            "options": [
+              "No experience",
+              "Beginner (basic logic gates)",
+              "Intermediate (combinational and sequential circuits)",
+              "Advanced (complex digital systems)",
+              "Expert (professional level)"
+            ]
+          },
+          {
+            "id": "eda_tools",
+            "text": "Have you worked with Electronic Design Automation (EDA) tools?",
+            "type": "CHECKBOX",
+            "required": true,
+            "options": [
+              "Xilinx Vivado",
+              "Intel Quartus",
+              "Cadence tools",
+              "Synopsys tools",
+              "ModelSim/QuestaSim",
+              "Open-source tools (Yosys, etc.)",
+              "None",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Machine Learning and AI Experience",
+        "questions": [
+          {
+            "id": "ml_experience",
+            "text": "Rate your experience with Machine Learning",
+            "type": "MULTIPLE_CHOICE",
+            "required": true,
+            "options": [
+              "No experience",
+              "Beginner (basic concepts)",
+              "Intermediate (implemented models)",
+              "Advanced (research/professional work)",
+              "Expert (ML researcher/engineer)"
+            ]
+          },
+          {
+            "id": "llm_experience",
+            "text": "Rate your experience with Large Language Models (LLMs)",
+            "type": "MULTIPLE_CHOICE",
+            "required": true,
+            "options": [
+              "No experience",
+              "Beginner (used ChatGPT/similar tools)",
+              "Intermediate (fine-tuning, prompt engineering)",
+              "Advanced (LLM research/development)",
+              "Expert (LLM specialist)"
+            ]
+          },
+          {
+            "id": "ai_frameworks",
+            "text": "Which AI/ML frameworks have you used? (Select all that apply)",
+            "type": "CHECKBOX",
+            "required": true,
+            "options": [
+              "TensorFlow",
+              "PyTorch",
+              "Hugging Face Transformers",
+              "OpenAI API",
+              "scikit-learn",
+              "JAX",
+              "None",
+              "Other"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Goals and Expectations",
+        "questions": [
+          {
+            "id": "learning_goals",
+            "text": "What do you hope to learn from the LLM4ChipDesign course/workshop?",
+            "type": "PARAGRAPH",
+            "required": true
+          },
+          {
+            "id": "topics_of_interest",
+            "text": "Which specific topics are you most interested in? (Select all that apply)",
+            "type": "CHECKBOX",
+            "required": true,
+            "options": [
+              "AutoChip (Verilog generation with feedback)",
+              "VeriThoughts (reasoning-based Verilog generation)",
+              "ROME (hierarchical prompting)",
+              "Veritas (CNF-guided synthesis)",
+              "PrefixLLM (prefix circuit design)",
+              "Testbench generation for FSMs",
+              "Natural language to SystemVerilog assertions",
+              "Hardware security and IP piracy",
+              "Software-to-hardware design (C2HLSC)",
+              "Analog circuit design (Masala-CHAI)",
+              "All topics"
+            ]
+          },
+          {
+            "id": "project_applications",
+            "text": "Do you have any specific projects or applications in mind where you might apply these techniques?",
+            "type": "PARAGRAPH",
+            "required": false
+          }
+        ]
+      }
+    ]
+  },
+  "instructions": {
+    "google_forms_setup": [
+      "1. Go to https://forms.google.com",
+      "2. Click 'Blank' to create a new form",
+      "3. Set the title to 'LLM4ChipDesign Prerequisite Survey'",
+      "4. Add the description from this JSON",
+      "5. For each section, add a new section in Google Forms",
+      "6. Add questions according to the type specified",
+      "7. Configure settings: collect email, limit responses, etc.",
+      "8. Test the form before sharing",
+      "9. Share the form link with participants"
+    ],
+    "question_type_mapping": {
+      "SHORT_ANSWER": "Short answer text",
+      "PARAGRAPH": "Paragraph",
+      "MULTIPLE_CHOICE": "Multiple choice",
+      "CHECKBOX": "Checkboxes",
+      "LINEAR_SCALE": "Linear scale",
+      "DROPDOWN": "Dropdown"
+    },
+    "data_analysis": [
+      "Responses are automatically saved to Google Sheets",
+      "Use the 'Responses' tab to view individual responses",
+      "Use the 'Summary' tab for automatic charts and statistics",
+      "Export to CSV/Excel for advanced analysis",
+      "Consider using pivot tables for cross-tabulation analysis"
+    ]
+  }
+}

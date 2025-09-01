@@ -1,6 +1,7 @@
 # Generative AI for Chip Design 
 
 ## Table of Contents
+- [📋 Prerequisite Survey](#prerequisite-survey)
 - [AutoChip to Generate Functional Verilog](#autochip-to-generate-functional-verilog)
 - [VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification](#verithoughts-enabling-automated-verilog-code-generation-using-reasoning-and-formal-verification)
 - [Rome was Not Built in a Single Step: Hierarchical Prompting for LLM-based Chip Design](#rome-was-not-built-in-a-single-step-hierarchical-prompting-for-llm-based-chip-design)
@@ -14,6 +15,17 @@
 - [C2HLSC: Use LLM to Bridge the Software-to-Hardware Design Gap](#c2hlsc--llms-can-bridge-the-software-to-hardware-design-gap)
 - [Masala-CHAI: A Large-Scale SPICE Netlist Dataset for Analog Circuits by Harnessing AI](#masala-chai-a-large-scale-spice-netlist-dataset-for-analog-circuits-by-harnessing-ai)
 - [Git Submodules (Add / Update / Delete)](#git-submodules-add--update--delete)
+
+---
+
+## 📋 Prerequisite Survey
+**Key Idea:**  
+A comprehensive Google Forms survey to assess participants' background knowledge before attending LLM4ChipDesign courses or workshops. The survey covers hardware design experience, programming skills, ML/AI knowledge, and specific expertise areas to help instructors tailor content appropriately.
+
+- 📋 **Survey Questions:** [LLM4ChipDesign_Prerequisite_Survey.md](LLM4ChipDesign_Prerequisite_Survey.md)
+- 🚀 **Quick Setup Guide:** [QUICK_START.md](QUICK_START.md)
+- 📖 **Detailed Instructions:** [README_Survey.md](README_Survey.md)
+- 🔧 **Automation Tools:** [create_google_form.py](create_google_form.py)
 
 ---
 

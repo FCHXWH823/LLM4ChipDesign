@@ -1,0 +1,55 @@
+
+    MANUAL GOOGLE FORMS CREATION INSTRUCTIONS
+    =========================================
+    
+    Since the Google Forms API requires authentication setup, here are manual 
+    instructions to create the survey:
+    
+    1. GO TO GOOGLE FORMS
+       - Visit https://forms.google.com
+       - Click "Blank" to create a new form
+    
+    2. SET UP FORM BASICS
+       - Title: "LLM4ChipDesign Prerequisite Survey"
+       - Description: "This survey assesses participants' background knowledge 
+         for the LLM4ChipDesign course/workshop. Your responses will help us 
+         tailor the content to match the audience's experience level."
+    
+    3. CONFIGURE SETTINGS
+       - Click the settings gear icon
+       - General tab:
+         ✓ Collect email addresses
+         ✓ Limit to 1 response
+         ✓ Allow response editing
+       - Presentation tab:
+         ✓ Show progress bar
+         ✗ Shuffle question order
+    
+    4. ADD QUESTIONS
+       Follow the detailed questions in 'LLM4ChipDesign_Prerequisite_Survey.md'
+       
+       For each question:
+       - Copy the question text
+       - Select the appropriate question type
+       - Add answer options for multiple choice/checkbox questions
+       - Set required/optional as specified
+    
+    5. ORGANIZE WITH SECTIONS
+       - Add section breaks for each major category
+       - Sections: Personal Info, Education, Hardware Design, ML/AI, Goals
+    
+    6. TEST THE FORM
+       - Use "Preview" to test the form
+       - Check that all questions work correctly
+       - Verify logic and flow
+    
+    7. SHARE THE FORM
+       - Click "Send" 
+       - Copy the link to share with participants
+       - Can also embed in websites or create QR codes
+    
+    8. SET UP RESPONSE COLLECTION
+       - Responses automatically save to Google Sheets
+       - Access via "Responses" tab
+       - Download as CSV/Excel for analysis
+    
