@@ -1,5 +1,13 @@
 # Generative AI for Chip Design 
 
+## 📚 Course Syllabus
+**NEW:** [**LLM4ChipDesign Course Syllabus**](LLM4ChipDesign_Course_Syllabus.md) - A comprehensive 14-week curriculum covering all modules with structured learning objectives, homework assignments, and assessment methods.
+
+- 📄 **Markdown Version:** [LLM4ChipDesign_Course_Syllabus.md](LLM4ChipDesign_Course_Syllabus.md)
+- 🌐 **HTML Version:** [LLM4ChipDesign_Course_Syllabus.html](LLM4ChipDesign_Course_Syllabus.html)
+
+---
+
 ## Table of Contents
 - [AutoChip to Generate Functional Verilog](#autochip-to-generate-functional-verilog)
 - [VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification](#verithoughts-enabling-automated-verilog-code-generation-using-reasoning-and-formal-verification)
