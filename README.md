@@ -11,7 +11,7 @@
 - [Security Assertions by Large Language Models](#security-assertions-by-large-language-models)
 - [OpenTitan RAG SVA Generator](#opentitan-rag-sva-generator)
 - [LLMPirate: LLMs for Black-box Hardware IP Piracy](#llmpirate-llms-for-black-box-hardware-ip-piracy)
-- [C2HLSC: Use LLM to Bridge the Software-to-Hardware Design Gap](#c2hlsc-use-llm-to-bridge-the-software-to-hardware-design-gap)
+- [C2HLSC: Use LLM to Bridge the Software-to-Hardware Design Gap](#c2hlsc--llms-can-bridge-the-software-to-hardware-design-gap)
 - [Masala-CHAI: A Large-Scale SPICE Netlist Dataset for Analog Circuits by Harnessing AI](#masala-chai-a-large-scale-spice-netlist-dataset-for-analog-circuits-by-harnessing-ai)
 - [Git Submodules (Add / Update / Delete)](#git-submodules-add--update--delete)
 
