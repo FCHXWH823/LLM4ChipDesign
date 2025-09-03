@@ -1,0 +1,447 @@
+{
+  "title": "LLM4ChipDesign Course Prerequisite Survey",
+  "description": "Welcome to the LLM4ChipDesign course! This course explores the intersection of Large Language Models (LLMs) and chip design, covering topics such as automated Verilog generation, testbench creation, SystemVerilog assertions, and hardware-software co-design using AI.\n\nTo ensure you have the necessary background knowledge and to tailor the course content to your experience level, please complete this prerequisite assessment survey. Your responses will help us understand your current knowledge and provide appropriate support during the course.\n\nPlease answer all questions honestly. This survey is for assessment purposes only and will not affect your grade.",
+  "settings": {
+    "collect_email": true,
+    "allow_response_edits": true,
+    "accepting_responses": true
+  },
+  "sections": {
+    "student_info": {
+      "title": "Student Information",
+      "questions": [
+        {
+          "type": "text",
+          "title": "Name",
+          "required": true
+        },
+        {
+          "type": "text",
+          "title": "Student ID",
+          "required": true
+        },
+        {
+          "type": "text",
+          "title": "Email",
+          "required": true
+        },
+        {
+          "type": "text",
+          "title": "Academic Year/Level",
+          "required": true
+        },
+        {
+          "type": "text",
+          "title": "Major/Program",
+          "required": true
+        },
+        {
+          "type": "date",
+          "title": "Date",
+          "required": true
+        }
+      ]
+    },
+    "prerequisite_assessment": {
+      "title": "Prerequisite Course Assessment",
+      "description": "Please indicate your experience level with the following subject areas that are fundamental to this course. Rate your experience using the scale:\n• No Experience (0): Never studied or worked with this area\n• Basic (1): Introductory course or minimal exposure\n• Intermediate (2): One or more courses with practical experience\n• Advanced (3): Extensive coursework and/or professional experience\n• Expert (4): Teaching/research level knowledge",
+      "questions": [
+        {
+          "type": "scale",
+          "title": "Digital Logic Design & Boolean Algebra",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Computer Architecture & Organization",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Hardware Description Languages (Verilog/SystemVerilog)",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Programming Languages (Python, C/C++)",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Data Structures & Algorithms",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Machine Learning & Artificial Intelligence",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Natural Language Processing (NLP)",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Formal Verification & Model Checking",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Electronic Design Automation (EDA) Tools",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "FPGA/ASIC Design Flow",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "High-Level Synthesis (HLS)",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Hardware-Software Co-design",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Computer Systems & Operating Systems",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Software Engineering & Version Control",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        },
+        {
+          "type": "scale",
+          "title": "Mathematics (Linear Algebra, Statistics)",
+          "scale": {
+            "min": 0,
+            "max": 4,
+            "labels": [
+              "No Experience",
+              "Basic",
+              "Intermediate",
+              "Advanced",
+              "Expert"
+            ]
+          },
+          "required": true
+        }
+      ]
+    },
+    "specific_courses": {
+      "title": "Specific Course Experience",
+      "description": "Please list any specific courses you have completed in the following areas (include course names/codes if possible):",
+      "questions": [
+        {
+          "type": "paragraph",
+          "title": "Digital Circuit Design / Logic Design",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Computer Architecture",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Verilog/VHDL/SystemVerilog",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Machine Learning / AI",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Programming (Python/C/C++)",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Formal Methods / Verification",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Embedded Systems",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Other Relevant Courses",
+          "required": false
+        }
+      ]
+    },
+    "tools_experience": {
+      "title": "Tools and Software Experience",
+      "description": "Please indicate your familiarity with the following tools and software (check all that apply):",
+      "questions": [
+        {
+          "type": "checkbox",
+          "title": "EDA Tools",
+          "choices": [
+            "Vivado (Xilinx)",
+            "Quartus (Intel)",
+            "ModelSim/QuestaSim",
+            "Synopsys Tools",
+            "Cadence Tools",
+            "Verilator",
+            "GTKWave"
+          ],
+          "required": false
+        },
+        {
+          "type": "checkbox",
+          "title": "Programming Tools",
+          "choices": [
+            "Python",
+            "C/C++",
+            "MATLAB",
+            "Git/GitHub",
+            "Jupyter Notebooks",
+            "Linux/Unix",
+            "Command Line"
+          ],
+          "required": false
+        },
+        {
+          "type": "checkbox",
+          "title": "AI/ML Frameworks",
+          "choices": [
+            "TensorFlow",
+            "PyTorch",
+            "OpenAI API",
+            "Hugging Face",
+            "scikit-learn",
+            "NLTK/spaCy",
+            "Google Colab"
+          ],
+          "required": false
+        }
+      ]
+    },
+    "project_experience": {
+      "title": "Project Experience",
+      "questions": [
+        {
+          "type": "paragraph",
+          "title": "Have you worked on any hardware design projects? If yes, please describe briefly:",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Have you used any AI/ML tools or APIs in your projects? If yes, please describe:",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Have you written Verilog or VHDL code before? What was the complexity level?",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Have you used any LLMs (ChatGPT, Claude, etc.) for coding assistance? Please describe your experience:",
+          "required": false
+        }
+      ]
+    },
+    "learning_goals": {
+      "title": "Learning Goals and Expectations",
+      "questions": [
+        {
+          "type": "paragraph",
+          "title": "What specific aspects of LLM-based chip design are you most interested in learning?",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "Do you have any specific career goals related to hardware design or AI?",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "What challenges do you expect to face in this course?",
+          "required": false
+        },
+        {
+          "type": "paragraph",
+          "title": "How do you prefer to learn new technical concepts? (hands-on, theory-first, examples, etc.)",
+          "required": false
+        }
+      ]
+    },
+    "additional_info": {
+      "title": "Additional Information",
+      "questions": [
+        {
+          "type": "paragraph",
+          "title": "Please provide any additional information about your background, interests, or concerns that might be relevant to this course:",
+          "required": false
+        }
+      ]
+    }
+  },
+  "generated_on": "2025-09-03T01:31:55.013897"
+}
