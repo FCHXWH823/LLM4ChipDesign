@@ -1,6 +1,9 @@
 # Generative AI for Chip Design 
 
+This repository contains materials for a comprehensive course on applying Large Language Models (LLMs) to chip design automation. The course covers 12 cutting-edge research projects spanning Verilog generation, verification, synthesis, and hardware-software co-design. For the complete 14-week course timeline and structure, see the [📚 Course Syllabus](SYLLABUS.md).
+
 ## Table of Contents
+- [📚 Course Syllabus](SYLLABUS.md) - **14-Week Course Timeline and Structure**
 - [AutoChip to Generate Functional Verilog](#autochip-to-generate-functional-verilog)
 - [VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification](#verithoughts-enabling-automated-verilog-code-generation-using-reasoning-and-formal-verification)
 - [Rome was Not Built in a Single Step: Hierarchical Prompting for LLM-based Chip Design](#rome-was-not-built-in-a-single-step-hierarchical-prompting-for-llm-based-chip-design)
