@@ -72,3 +72,6 @@
 	path = NSPG
 	url = https://github.com/TIES-Lab/NSPG.git
 	branch = main
+[submodule "SynthAgentic"]
+	path = SynthAgentic
+	url = https://github.com/owenfucell/SynthAgentic.git
