@@ -78,14 +78,6 @@ AutoChip generates functional Verilog modules from an initial design prompt and 
 
 ---
 
-## ChipBench: A Comprehensive Benchmark for AI-Aided Chip Design
-**Key Idea:**
-ChipBench provides an end-to-end framework for evaluating AI-aided chip-design tasks. For natural-language-to-RTL generation, it includes Verilog datasets with different structures and difficulty levels and a `spec-to-rtl` evaluation flow. It also supports RTL debugging, cross-language reference-model generation, and tool-backed consistency checking.
-
-- 💻 **Code:** https://github.com/zhongkaiyu/ChipBench
-
----
-
 ## VeriThoughts: Automated Verilog Code Generation using Reasoning and Formal Verification
 **Key Idea:**  
 VeriThoughts is a novel dataset designed for reasoning-based Verilog code generation. We establish a new benchmark framework grounded in formal verification methods to evaluate the quality and correctness of generated hardware descriptions. Additionally, it presents a suite of specialized small-scale models optimized specifically for Verilog generation. Our work addresses the growing need for automated hardware design tools that can produce verifiably correct implementations from high-level specifications, potentially accelerating the hardware development process while maintaining rigorous correctness guarantees.
@@ -221,6 +213,14 @@ Prior work mainly prompts or finetunes a single model. What remains not well stu
 
 - 📄 **Paper:** https://www.arxiv.org/abs/2511.22749
 - 💻 **Code:** https://github.com/zwangsyc/VeriOracle/tree/main
+
+---
+
+## ChipBench: A Comprehensive Benchmark for AI-Aided Chip Design
+**Key Idea:**
+ChipBench provides an end-to-end framework for evaluating AI-aided chip-design tasks. For natural-language-to-RTL generation, it includes Verilog datasets with different structures and difficulty levels and a `spec-to-rtl` evaluation flow. It also supports RTL debugging, cross-language reference-model generation, and tool-backed consistency checking.
+
+- 💻 **Code:** https://github.com/zhongkaiyu/ChipBench
 
 ---
 
