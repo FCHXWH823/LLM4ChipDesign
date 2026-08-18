@@ -12,6 +12,7 @@ GenAI Units In Digital Design Education (GUIDE), is an open courseware repositor
 | Topic | Subtopic | Unit | Description |
 |-------|----------|------|-------------|
 | **LLM-aided RTL Generation** | RTL Generation from Natural Language | AutoChip | Generate Verilog from a prompt and testbench plus iterative compilation/simulation feedback. |
+| | | ChipBench | Provides a comprehensive benchmark and end-to-end evaluation framework for specification-to-RTL generation, RTL debugging, reference-model generation, and tool-backed checking. |
 | | | ROME | Uses hierarchical prompting to decompose complex designs so smaller open-source LLMs can generate larger Verilog systems with better quality and lower cost. |
 | | | Veritas | Has an LLM generate CNF clauses as a formal functional specification and deterministically converts CNF to Verilog for correctness by construction. |
 | | | PrefixLLM | Represents prefix-adder synthesis as structured text (SPCR) and performs iterative LLM-guided design space exploration to optimize area and delay. |
@@ -41,6 +42,7 @@ GenAI Units In Digital Design Education (GUIDE), is an open courseware repositor
 
 ## Table of Contents
 - [AutoChip to Generate Functional Verilog](#autochip-to-generate-functional-verilog)
+- [ChipBench: A Comprehensive Benchmark for AI-Aided Chip Design](#chipbench-a-comprehensive-benchmark-for-ai-aided-chip-design)
 - [VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification](#verithoughts-enabling-automated-verilog-code-generation-using-reasoning-and-formal-verification)
 - [Rome was Not Built in a Single Step: Hierarchical Prompting for LLM-based Chip Design](#rome-was-not-built-in-a-single-step-hierarchical-prompting-for-llm-based-chip-design)
 - [Veritas: Deterministic Verilog Code Synthesis from LLM-Generated Conjunctive Normal Form](#veritas-deterministic-verilog-code-synthesis-from-llm-generated-conjunctive-normal-form)
@@ -73,6 +75,14 @@ AutoChip generates functional Verilog modules from an initial design prompt and 
 - 📄 **Paper:** https://arxiv.org/abs/2311.04887  
 - 💻 **Code:** https://github.com/shailja-thakur/AutoChip.git
 - 📑 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/ETS%202025%20Tutorial.pptx
+
+---
+
+## ChipBench: A Comprehensive Benchmark for AI-Aided Chip Design
+**Key Idea:**
+ChipBench provides an end-to-end framework for evaluating AI-aided chip-design tasks. For natural-language-to-RTL generation, it includes Verilog datasets with different structures and difficulty levels and a `spec-to-rtl` evaluation flow. It also supports RTL debugging, cross-language reference-model generation, and tool-backed consistency checking.
+
+- 💻 **Code:** https://github.com/zhongkaiyu/ChipBench
 
 ---
 
@@ -334,5 +344,3 @@ git push origin main
 git rm <your/module/path>
 git commit -m "delete <your/module/name>"
 ```
-
-
