@@ -75,3 +75,6 @@
 [submodule "SynthAgentic"]
 	path = SynthAgentic
 	url = https://github.com/owenfucell/SynthAgentic.git
+[submodule "ChipBench"]
+	path = ChipBench
+	url = https://github.com/zhongkaiyu/ChipBench.git

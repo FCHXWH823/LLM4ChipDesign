@@ -42,7 +42,6 @@ GenAI Units In Digital Design Education (GUIDE), is an open courseware repositor
 
 ## Table of Contents
 - [AutoChip to Generate Functional Verilog](#autochip-to-generate-functional-verilog)
-- [ChipBench: A Comprehensive Benchmark for AI-Aided Chip Design](#chipbench-a-comprehensive-benchmark-for-ai-aided-chip-design)
 - [VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification](#verithoughts-enabling-automated-verilog-code-generation-using-reasoning-and-formal-verification)
 - [Rome was Not Built in a Single Step: Hierarchical Prompting for LLM-based Chip Design](#rome-was-not-built-in-a-single-step-hierarchical-prompting-for-llm-based-chip-design)
 - [Veritas: Deterministic Verilog Code Synthesis from LLM-Generated Conjunctive Normal Form](#veritas-deterministic-verilog-code-synthesis-from-llm-generated-conjunctive-normal-form)
@@ -58,6 +57,7 @@ GenAI Units In Digital Design Education (GUIDE), is an open courseware repositor
 - [SALAD: Systematic Assessment of Machine Unlearning on LLM-Aided Hardware Design](#salad-systematic-assessment-of-machine-unlearning-on-llm-aided-hardware-design)
 - [LockForge: Automating Paper-to-Code for Logic Locking with Multi-Agent Reasoning LLMs](#lockForge-automating-paper-to-code-for-logic-locking-with-multi-agent-reasoning-llms)
 - [VeriDispatcher: Multi-Model Dispatching through Pre-Inference Difficulty Prediction for RTL Generation Optimization](#veridispatcher-multi-model-dispatching-through-pre-inference-difficulty-prediction-for-rtl-generation-optimization)
+- [ChipBench: A Comprehensive Benchmark for AI-Aided Chip Design](#chipbench-a-comprehensive-benchmark-for-ai-aided-chip-design)
 - [Benchmarking Large Language Models for Automated Verilog RTL Code Generation](#benchmarking-large-language-models-for-automated-verilog-rtl-code-generation)
 - [VeriReason: Reinforcement Learning with Testbench Feedback for Reasoning-Enhanced Verilog Generation](#verireason-reinforcement-learning-with-testbench-feedback-for-reasoning-enhanced-verilog-generation)
 - [Unleashing GHOST: An LLM-Powered Framework for Automated Hardware Trojan Design](#unleashing-ghost-an-llm-powered-framework-for-automated-hardware-trojan-design)
