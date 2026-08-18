@@ -12,11 +12,11 @@ GenAI Units In Digital Design Education (GUIDE), is an open courseware repositor
 | Topic | Subtopic | Unit | Description |
 |-------|----------|------|-------------|
 | **LLM-aided RTL Generation** | RTL Generation from Natural Language | AutoChip | Generate Verilog from a prompt and testbench plus iterative compilation/simulation feedback. |
-| | | ChipBench | Provides a comprehensive benchmark and end-to-end evaluation framework for specification-to-RTL generation, RTL debugging, reference-model generation, and tool-backed checking. |
 | | | ROME | Uses hierarchical prompting to decompose complex designs so smaller open-source LLMs can generate larger Verilog systems with better quality and lower cost. |
 | | | Veritas | Has an LLM generate CNF clauses as a formal functional specification and deterministically converts CNF to Verilog for correctness by construction. |
 | | | PrefixLLM | Represents prefix-adder synthesis as structured text (SPCR) and performs iterative LLM-guided design space exploration to optimize area and delay. |
 | | | VeriDispatcher | Dispatch RTL tasks to LLMs using pre-inference difficulty prediction to improve quality and reduce LLM use cost. |
+| | | ChipBench | Provides a comprehensive benchmark and end-to-end evaluation framework for specification-to-RTL generation, RTL debugging, reference-model generation, and tool-backed checking. |
 | | Finetuned LLMs for RTL Generation | VGen | Fine-tune pre-trained LLMs on Verilog code from GitHub and textbooks and evaluates them with syntax and testbench-based functional checks. |
 | | | VeriThoughts | Provides a formal-verification-based pipeline to build a reasoning-oriented Verilog dataset and to fine-tune LLMs for high-accuracy Verilog generation. |
 | | | VeriReason | A DeepSeek-R1-inspired RTL generation framework that combines supervised fine-tuning with GRPO reinforcement learning and feedback-driven rewards. |
