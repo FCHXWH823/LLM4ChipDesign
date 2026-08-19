@@ -76,5 +76,14 @@
 	path = SynthAgentic
 	url = https://github.com/owenfucell/SynthAgentic.git
 [submodule "ChipBench"]
-	path = ChipBench
+	path = benchmark/ChipBench
 	url = https://github.com/zhongkaiyu/ChipBench.git
+[submodule "benchmark/VerilogEval"]
+	path = benchmark/VerilogEval
+	url = https://github.com/NVlabs/verilog-eval.git
+[submodule "benchmark/FVEval"]
+	path = benchmark/FVEval
+	url = https://github.com/NVlabs/FVEval.git
+[submodule "benchmark/Trust-Hub"]
+	path = benchmark/Trust-Hub
+	url = https://github.com/UFESL/Trusthub-Trojans.git

@@ -1,9 +1,44 @@
 # GUIDE: GenAI Units In Digital Design Education
 
 ## Abstract
-GenAI Units In Digital Design Education (GUIDE), is an open courseware repository with runnable Google Colab labs. GUIDE organizes materials as topics, subtopics, and units across LLM-aided Register-Transfer Level (RTL) generation, LLM-aided RTL verification, and LLM-aided hardware security. We describe the repository architecture and the standard unit package: slides, short videos, runnable labs, and related papers, together with recommended metadata and student deliverables so instructors can reuse units and grade them consistently.
+GenAI Units In Digital Design Education (GUIDE) is an open, modular platform for GenAI-driven digital design education. Each unit provides slides, a short video, a runnable lab, and related papers. Instructors can select units to build courses for instructional use. Students can also learn from the units and develop new solutions through projects, competitions, and research. Before a solution becomes a new GUIDE unit, its end-to-end workflow must be evaluated using open-source EDA tools and open-source hardware benchmarks to make sure it runs successfully.
 
-![alt text](overview_new.png)
+![GUIDE architecture, educational uses, and evaluation flow](overview_new.png)
+
+## Shared Open-Source EDA Tools
+
+GUIDE uses open-source EDA tools so students can run hardware-design and verification workflows without depending on commercial tool licenses. A GUIDE unit may use one or more of the following tools.
+
+| Tool | Simple explanation |
+|------|--------------------|
+| [Icarus Verilog](https://github.com/steveicarus/iverilog) | Compiles and simulates Verilog designs and testbenches. |
+| [Yosys](https://github.com/YosysHQ/yosys) | Synthesizes RTL and reports the resulting hardware structure and design statistics. |
+| [cocotb](https://github.com/cocotb/cocotb) | Lets students write Python testbenches that run with HDL simulators. |
+| [Verilator](https://github.com/verilator/verilator) | Checks, compiles, and simulates Verilog and SystemVerilog designs at high speed. |
+| [SymbiYosys](https://github.com/YosysHQ/sby) | Runs open-source formal-verification flows for proving hardware properties. |
+
+## Shared Open-Source Hardware Benchmarks
+
+The [`benchmark/`](benchmark/) folder contains the benchmark repositories as Git submodules. These benchmarks provide common tasks and test cases for GUIDE units. They are also used to evaluate a proposed unit before it is contributed to GUIDE.
+
+| Benchmark | Simple explanation |
+|-----------|--------------------|
+| [VerilogEval](benchmark/VerilogEval) ([upstream](https://github.com/NVlabs/verilog-eval)) | Tests how well LLMs generate functionally correct Verilog RTL from natural-language design problems. |
+| [ChipBench](benchmark/ChipBench) ([upstream](https://github.com/zhongkaiyu/ChipBench)) | Tests repository-level RTL generation, debugging, and verification with complete design files and tool-backed workflows. |
+| [FVEval](benchmark/FVEval) ([upstream](https://github.com/NVlabs/FVEval)) | Tests how well LLMs generate and verify SystemVerilog assertions from natural-language properties and RTL designs. |
+| [Trust-Hub](benchmark/Trust-Hub) ([canonical site](https://trust-hub.org/), [Git mirror](https://github.com/UFESL/Trusthub-Trojans)) | Provides hardware designs with inserted Trojans for studying and evaluating hardware-security methods. |
+
+Clone GUIDE together with every benchmark and unit submodule:
+
+```bash
+git clone --recurse-submodules https://github.com/FCHXWH823/LLM4ChipDesign.git
+```
+
+If GUIDE has already been cloned, initialize and update its submodules with:
+
+```bash
+git submodule update --init --recursive
+```
 
 ---
 
@@ -16,7 +51,6 @@ GenAI Units In Digital Design Education (GUIDE), is an open courseware repositor
 | | | Veritas | Has an LLM generate CNF clauses as a formal functional specification and deterministically converts CNF to Verilog for correctness by construction. |
 | | | PrefixLLM | Represents prefix-adder synthesis as structured text (SPCR) and performs iterative LLM-guided design space exploration to optimize area and delay. |
 | | | VeriDispatcher | Dispatch RTL tasks to LLMs using pre-inference difficulty prediction to improve quality and reduce LLM use cost. |
-| | | ChipBench | Provides a comprehensive benchmark and end-to-end evaluation framework for specification-to-RTL generation, RTL debugging, reference-model generation, and tool-backed checking. |
 | | Finetuned LLMs for RTL Generation | VGen | Fine-tune pre-trained LLMs on Verilog code from GitHub and textbooks and evaluates them with syntax and testbench-based functional checks. |
 | | | VeriThoughts | Provides a formal-verification-based pipeline to build a reasoning-oriented Verilog dataset and to fine-tune LLMs for high-accuracy Verilog generation. |
 | | | VeriReason | A DeepSeek-R1-inspired RTL generation framework that combines supervised fine-tuning with GRPO reinforcement learning and feedback-driven rewards. |
@@ -41,6 +75,8 @@ GenAI Units In Digital Design Education (GUIDE), is an open courseware repositor
 ---
 
 ## Table of Contents
+- [Shared Open-Source EDA Tools](#shared-open-source-eda-tools)
+- [Shared Open-Source Hardware Benchmarks](#shared-open-source-hardware-benchmarks)
 - [AutoChip to Generate Functional Verilog](#autochip-to-generate-functional-verilog)
 - [VeriThoughts: Enabling Automated Verilog Code Generation using Reasoning and Formal Verification](#verithoughts-enabling-automated-verilog-code-generation-using-reasoning-and-formal-verification)
 - [Rome was Not Built in a Single Step: Hierarchical Prompting for LLM-based Chip Design](#rome-was-not-built-in-a-single-step-hierarchical-prompting-for-llm-based-chip-design)
@@ -57,7 +93,6 @@ GenAI Units In Digital Design Education (GUIDE), is an open courseware repositor
 - [SALAD: Systematic Assessment of Machine Unlearning on LLM-Aided Hardware Design](#salad-systematic-assessment-of-machine-unlearning-on-llm-aided-hardware-design)
 - [LockForge: Automating Paper-to-Code for Logic Locking with Multi-Agent Reasoning LLMs](#lockForge-automating-paper-to-code-for-logic-locking-with-multi-agent-reasoning-llms)
 - [VeriDispatcher: Multi-Model Dispatching through Pre-Inference Difficulty Prediction for RTL Generation Optimization](#veridispatcher-multi-model-dispatching-through-pre-inference-difficulty-prediction-for-rtl-generation-optimization)
-- [ChipBench: A Comprehensive Benchmark for AI-Aided Chip Design](#chipbench-a-comprehensive-benchmark-for-ai-aided-chip-design)
 - [Benchmarking Large Language Models for Automated Verilog RTL Code Generation](#benchmarking-large-language-models-for-automated-verilog-rtl-code-generation)
 - [VeriReason: Reinforcement Learning with Testbench Feedback for Reasoning-Enhanced Verilog Generation](#verireason-reinforcement-learning-with-testbench-feedback-for-reasoning-enhanced-verilog-generation)
 - [Unleashing GHOST: An LLM-Powered Framework for Automated Hardware Trojan Design](#unleashing-ghost-an-llm-powered-framework-for-automated-hardware-trojan-design)
@@ -213,14 +248,6 @@ Prior work mainly prompts or finetunes a single model. What remains not well stu
 
 - 📄 **Paper:** https://www.arxiv.org/abs/2511.22749
 - 💻 **Code:** https://github.com/zwangsyc/VeriOracle/tree/main
-
----
-
-## ChipBench: A Comprehensive Benchmark for AI-Aided Chip Design
-**Key Idea:**
-ChipBench provides an end-to-end framework for evaluating AI-aided chip-design tasks. For natural-language-to-RTL generation, it includes Verilog datasets with different structures and difficulty levels and a `spec-to-rtl` evaluation flow. It also supports RTL debugging, cross-language reference-model generation, and tool-backed consistency checking.
-
-- 💻 **Code:** https://github.com/zhongkaiyu/ChipBench
 
 ---
 
