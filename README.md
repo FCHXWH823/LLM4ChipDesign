@@ -31,7 +31,7 @@ The [`benchmark/`](benchmark/) folder contains the benchmark repositories as Git
 Clone GUIDE together with every benchmark and unit submodule:
 
 ```bash
-git clone --recurse-submodules https://github.com/GUIDE-EDA/LLM4ChipDesign.git
+git clone --recurse-submodules https://github.com/GUIDE-EDA/guide.git
 ```
 
 If GUIDE has already been cloned, initialize and update its submodules with:
@@ -327,7 +327,7 @@ This project is designed to explore the capabilities and limitations of Large La
 - Competence in using Iverilog for RTL simulation and debugging
 
 **Project Tutorial:** 
-- https://github.com/GUIDE-EDA/LLM4ChipDesign/blob/main/FinalProjects/Verilog%20Adder%20Generation.pdf 
+- https://github.com/GUIDE-EDA/guide/blob/main/FinalProjects/Verilog%20Adder%20Generation.pdf 
 ---
 
 ## Git Submodules (Add / Update / Delete)
