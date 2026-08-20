@@ -1,9 +1,5 @@
 # GUIDE: GenAI Units In Digital Design Education
 
-<p align="center">
-  <img src="assets/GUIDE-logo.png" alt="GUIDE logo" width="240">
-</p>
-
 ## Abstract
 GenAI Units In Digital Design Education (GUIDE) is an open, modular platform for GenAI-driven digital design education. Each unit provides slides, a short video, a runnable lab, and related papers. Instructors can select units to build courses for instructional use. Students can also learn from the units and develop new solutions through projects, competitions, and research. Before a solution becomes a new GUIDE unit, its end-to-end workflow must be evaluated using open-source EDA tools and open-source hardware benchmarks to make sure it runs successfully.
 
