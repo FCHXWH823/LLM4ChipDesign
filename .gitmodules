@@ -87,3 +87,7 @@
 [submodule "benchmark/Trust-Hub"]
 	path = benchmark/Trust-Hub
 	url = https://github.com/UFESL/Trusthub-Trojans.git
+[submodule "QiMeng-CodeV-SVA"]
+	path = QiMeng-CodeV-SVA
+	url = https://github.com/wyt2000/CodeV-SVA.git
+	branch = master

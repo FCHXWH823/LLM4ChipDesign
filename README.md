@@ -62,6 +62,7 @@ git submodule update --init --recursive
 | | | SV Assertions | Utilizing LLMs to generate SystemVerilog assertions from design documentation. |
 | | | Assert-O | Optimization of SystemVerilog assertions using LLMs. |
 | | | Hybrid-NL2SVA | A RAG framework for NL2SVA and a fine-tuning pipeline with a synthetic dataset to train lightweight LLMs to translate natural-language properties into SVAs. |
+| | | QiMeng-CodeV-SVA | Trains specialized LLMs to generate SystemVerilog assertions from natural-language properties using RTL-grounded bidirectional data synthesis. |
 | **LLM-aided Hardware Security** | Hardware Attacks | LLMPirate | LLM-driven rewriting to thwart piracy-detection tools. |
 | | | ATTRITION | A reinforcement-learning-based framework that models a realistic adversary to systematically evaluate and evade prior hardware-Trojan detection methods, showing dramatically higher attack success than random-insertion assumptions. |
 | | | GHOST | An automated LLM-based attack framework that generates and inserts stealthy, synthesizable Hardware Trojans into HDL designs, enabling rapid Trojan creation and highlighting detection risks in modern hardware security flows. |
@@ -84,6 +85,7 @@ git submodule update --init --recursive
 - [PrefixLLM: LLM-aided Prefix Circuit Design](#prefixllm-llm-aided-prefix-circuit-design)
 - [LLM-aided Testbench Generation and Bug Detection for Finite-State Machines](#llm-aided-testbench-generation-and-bug-detection-for-finite-state-machines)
 - [Hybrid-NL2SVA: LLM-based Natural Language to SystemVerilog Assertion](#hybrid-nl2sva-llm-based-natural-language-to-systemverilog-assertion)
+- [QiMeng-CodeV-SVA: Specialized LLMs for Hardware Assertion Generation](#qimeng-codev-sva-specialized-llms-for-hardware-assertion-generation)
 - [Security Assertions by Large Language Models](#security-assertions-by-large-language-models)
 - [OpenTitan RAG SVA Generator](#opentitan-rag-sva-generator)
 - [LLMPirate: LLMs for Black-box Hardware IP Piracy](#llmpirate-llms-for-black-box-hardware-ip-piracy)
@@ -166,13 +168,23 @@ A key aspect of chip design is functional testing, which relies on testbenches t
 
 ---
 
-## LLM-based Natural Language to SystemVerilog Assertion
+## Hybrid-NL2SVA: LLM-based Natural Language to SystemVerilog Assertion
 **Key Idea:**  
 Assertion-based verification is a popular verification technique that involves capturing design intent in a set of assertions that can be used in formal verification or testing-based checking.  However, writing security-centric assertions is a challenging task. This tool helps LLM generate SystemVerilog assertions from natural language input.
 
 - 📄 **Paper:** https://arxiv.org/pdf/2506.21569  
 - 💻 **Code:** https://github.com/FCHXWH823/RAG-aided-Assertion-Generation
 - 📄 **Slides:** https://github.com/FCHXWH823/LLM4Hardware/blob/main/slides/MLCAD25-Hybrid-NL2SVA.pptx
+
+---
+
+## QiMeng-CodeV-SVA: Specialized LLMs for Hardware Assertion Generation
+**Key Idea:**
+QiMeng-CodeV-SVA trains specialized LLMs to translate natural-language verification properties into SystemVerilog assertions. It uses RTL-grounded bidirectional data synthesis and provides model checkpoints, evaluation code, and corrected FVEval tasks for measuring functional correctness.
+
+- 💻 **GUIDE submodule:** [QiMeng-CodeV-SVA](QiMeng-CodeV-SVA)
+- 🔗 **Upstream code:** https://github.com/wyt2000/CodeV-SVA
+- 🤗 **Models:** https://huggingface.co/wyt2000/CodeV-SVA-14B
 
 ---
 
