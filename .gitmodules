@@ -87,3 +87,6 @@
 [submodule "benchmark/Trust-Hub"]
 	path = benchmark/Trust-Hub
 	url = https://github.com/UFESL/Trusthub-Trojans.git
+[submodule "VHDLSuite"]
+	path = VHDLSuite
+	url = https://github.com/NYU-Serendipity-LLM4Coding/VHDLSuite
