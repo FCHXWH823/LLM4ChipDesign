@@ -91,3 +91,6 @@
 	path = QiMeng-CodeV-SVA
 	url = https://github.com/wyt2000/CodeV-SVA.git
 	branch = master
+[submodule "VHDLSuite"]
+	path = VHDLSuite
+	url = https://github.com/NYU-Serendipity-LLM4Coding/VHDLSuite
